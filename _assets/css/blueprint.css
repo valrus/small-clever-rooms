@@ -286,3 +286,7 @@ blockquote
 {
   font-weight: bold;
 }
+
+li ol, li ul {
+  padding-left: 1em;
+}
