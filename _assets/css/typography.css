@@ -1,0 +1,245 @@
+body {
+  font-family: "PT Sans","lucida sans unicode", sans-serif;
+  line-height: 1.5em;
+  background-color:rgb(37, 58, 107);
+  color:rgb(37, 58, 107);
+  font-size-adjust:none;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:400;
+}
+
+#column, #footer {
+  margin: 0 auto;
+}
+
+#main {
+  background: #FFFEF0;
+  padding: 2em 3em;
+  margin-bottom: 0;
+}
+
+#column {
+  width: 36em;
+  position: relative;
+}
+
+#return {
+  position: fixed;
+  right: 0;
+  background-color:rgb(37, 58, 107);
+}
+
+#footer {
+  font-family: "PT Sans","lucida sans unicode", sans-serif;
+  color: #FFFEF0;
+  margin: 20px 0;
+}
+
+#footer p {
+  padding: 0 3em;
+}
+
+#footer a {
+  color: #ffd792;
+}
+
+#colophon {
+  margin-top: 1em;
+}
+
+p {
+  font-weight:300;
+  margin: .8125em 0;
+}
+
+p + p {
+  text-indent:1.625em;
+}
+
+/* This is kind of ugly tbh
+p:first-of-type:first-letter {
+  float:left;
+  font-family: "Crete Round", "Palatino Linotype", "Georgia", serif;
+  font-size:3em;
+  font-weight:700;
+  line-height:1em;
+  margin-bottom:-.2em;
+  padding:.2em .1em 0 0;
+}
+*/
+
+p img {
+  float:left;
+  margin:.5em .8125em .8125em 0;
+  padding:0;
+}
+
+p img.right {
+  float:right;
+  margin:.5em 0 .8125em .8125em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crete Round", "Palatino Linotype", "Georgia", serif;
+  line-height: 1.15em;
+  color: rgb(37, 58, 107);
+  font-weight:400;
+}
+
+h1 {
+  font-size:2.125em;
+  margin:.765em 0;
+}
+
+h2 {
+  font-size:1.9em;
+  margin:.855em 0;
+}
+
+h3 {
+  font-size:1.7em;
+  margin:.956em 0;
+}
+
+h4 {
+  font-size:1.4em;
+  margin:1.161em 0;
+}
+
+h5,h6 {
+  font-size:1.313em;
+  margin:1.238em 0;
+}
+
+/*
+ul {
+  list-style-position:outside;
+}
+
+li ul,li ol {
+  margin:0 1.625em;
+}
+*/
+dl dd {
+  margin-left:1.625em;
+}
+
+a {
+  color:#005AF2;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+table {
+  margin-bottom:1.625em;
+  border-collapse:collapse;
+}
+
+tr,th,td {
+  height:26px;
+  margin:0;
+  padding:0 1.625em 0 1em;
+}
+
+caption {
+  text-align:center;
+  font-family:Georgia, serif;
+}
+
+abbr,acronym {
+  border-bottom:1px dotted #000;
+}
+
+address {
+  margin-top:1.625em;
+  font-style:italic;
+}
+
+del {
+  color:#000;
+}
+
+blockquote {
+  font-family:georgia,serif;
+  font-style:italic;
+  padding:1em 1em 1.625em;
+}
+
+blockquote:before {
+  content:"\201C";
+  font-size:3em;
+  margin-left:-.625em;
+  font-family:georgia,serif;
+  color:#aaa;
+  line-height:0;
+}
+
+blockquote > p {
+  margin:0;
+  padding:0;
+}
+
+pre,code {
+  white-space:pre;
+  /* margin:1.625em 0; */
+}
+
+pre,code,tt {
+  font:1em monospace;
+  line-height:1.5;
+}
+
+tt {
+  display:block;
+  margin:1.625em 0;
+}
+
+hr {
+  margin-bottom:1.625em;
+}
+
+ol, ul {
+  list-style-position: outside;
+}
+
+li ol, li ul {
+  padding-left: 1em;
+}
+
+dl {
+  margin:0 0 1.625em;
+}
+
+dl dt,th,strong,dfn {
+  font-weight:700;
+}
+
+tfoot,em,dfn {
+  font-style:italic;
+}
+
+.oldbook {
+  font-family:"Warnock Pro","Goudy Old Style","Book Antiqua",Palatino,Georgia,serif;
+}
+
+.note {
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-style:italic;
+  font-size:.9em;
+  color:#333;
+  margin:.1em;
+}
+
+.mono {
+  font-family:"Courier New", Courier, monospace;
+}
+
+.albumcover {
+  width: 25%;
+  float: right;
+  margin: 1em;
+}

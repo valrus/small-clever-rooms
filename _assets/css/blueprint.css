@@ -1,0 +1,288 @@
+html
+{
+  overflow: hidden;
+  height: 99%;
+}
+
+body
+{
+  height: 99%;
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  text-align: center;
+  background-color: rgb(37, 58, 107);
+}
+
+*
+{
+  font-family: "PT Sans", Tahoma, Verdana, sans-serif;
+  color: #FFFEF0;
+  text-align: left;
+}
+
+.list
+{
+  margin: 5px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+a:hover
+{
+    color: #ffb332;
+}
+
+/* === Containers === */
+
+#first_container
+{
+  margin: 0 auto 0 auto;
+  display: table;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 740px;
+}
+
+#second_container
+{
+  position: absolute;
+  top: 40%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#third_container
+{
+  position: relative;
+  top: -163px;
+  width: 740px;
+}
+
+/* === Menu === */
+
+#menu
+{
+  font-size: 9pt;
+  position: relative;
+  height: 50px;
+  padding-right: 40px;
+  margin: 0 0 -17px;
+  list-style: none;
+  z-index: 20;
+}
+
+#menu li
+{
+  float: right;
+  display: block;
+  width: 82px;  height: 50px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+#menu a
+{
+  display: block;
+  width: 82px;  height: 50px;
+  background-color: inherit;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+}
+
+#menu a:link, #menu a:visited
+{
+  color: #ffffff;
+}
+
+#menu a:hover, #menu a:active
+{
+  background-image: url('../images/taba2-walls.png');
+  color: #ffb332;
+}
+
+#menuselected
+{
+  display: block;
+  width: 82px;  height: 50px;
+  background-image: url('../images/taba2-door.png');
+  text-decoration: none;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* === Language menu === */
+
+#submenu
+{
+  float: left;
+  height: 31px;
+  width: 300px;
+  padding-left: 10px;
+  margin: 0;
+  list-style: none;
+
+}
+
+#submenu li
+{
+  float: left;
+  display: block;
+  width: 82px;  height: 31px;
+}
+
+#submenu a
+{
+  display: block;
+  width: 82px;  height: 31px;
+  background-color: inherit;
+  text-decoration: none;
+  line-height: 25px;
+  text-align: center;
+}
+
+#submenu a:link, #submenu a:visited
+{
+  color: #ffffff;
+}
+
+#submenu a:hover, #submenu a:active
+{
+  background-image: url('../images/tabb2.jpg');
+  color: #ffb332;
+}
+
+#submenuselected
+{
+  display: block;
+  width: 82px;  height: 31px;
+  background-image: url('../images/tabb.jpg');
+  text-decoration: none;
+  line-height: 25px;
+  color: #ffb332;
+  text-align: center;
+}
+
+/* === Other Divs === */
+
+.border
+{
+  // background-color: #ffffff;
+  padding: 0px 20px 0px 190px;
+  // margin: 20px 0px 20px 0px;
+  height: 450px;
+  background-image: url('../images/blueblueprint.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: left;
+  position: relative;
+}
+
+.title
+{
+  background-image: url('../images/title.png');
+  position: absolute;
+  width: 190px;
+  height: 162px;
+  z-index: 30;
+}
+
+.content
+{
+  position: absolute;
+  height: 404px;
+  overflow: auto;
+  width: 530px;
+  top: 22px;
+}
+
+.designinfo
+{
+  margin-top: 5px;
+  text-align: right;
+  color: white;
+  background-color: inherit;
+}
+
+.designinfo a
+{
+    color: #ffd792;
+}
+
+.designinfo a:hover
+{
+    color: #ffb332;
+}
+
+/* === Inline Text Styles === */
+
+h1
+{
+  margin: 10px 0 -40px -2px;
+  padding: 0 10px 40px 9px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: inherit;
+}
+
+.details
+{
+  display: none;
+  font-size: 10px;
+  color: #f8b2b2;
+}
+
+.text {
+  font-size: 10pt;
+  line-height: 1.7em;
+  margin: 2em;
+}
+
+.text ul {
+  font-size: 110%;
+}
+
+.text p
+{
+  display: block;
+  margin: 5px 5px 5px 12px;
+  color: white;
+}
+
+.text a
+{
+  color: #ffd792;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text a:hover, .text a:active
+{
+  color: #ffb332;
+}
+
+.text em
+{
+  color: #ffffff;
+}
+
+blockquote
+{
+  margin: 3px 0 3px 0;
+  padding: 5px 10px 5px 10px;
+}
+
+.note
+{
+  display: block;
+	margin: 10px 15px 10px 15px;
+	color: #555555;
+}
+
+.bold
+{
+  font-weight: bold;
+}

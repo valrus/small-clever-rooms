@@ -1,0 +1,188 @@
+.audiojs audio
+{
+    position: absolute;
+    left: -1px;
+}
+
+.audiojs
+{
+    margin: 0 auto;
+    width: 100%;
+    height: 26px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 1em;
+    background-color: #263b6a;
+    font: 12px monospace;
+    border: 1px solid #dddddd;
+}
+
+.audiojs:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.audiojs {
+	display: inline-block;
+}
+ 
+html[xmlns] .audiojs {
+	display: block;
+}
+ 
+* html .audiojs {
+	height: 1%;
+}
+
+.audiojs .play-pause
+{
+    
+    width: 10%;
+    padding-left: 5px;
+    height: 24px;
+    float: left;
+    overflow: hidden;
+    // border-right: 1px dashed #dddddd;
+}
+
+.audiojs p
+{
+    width: 25px;
+    height: 28px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.audiojs .play { background: url('../js/audiojs/player-graphics.gif') -2px -1px no-repeat; }
+.audiojs .loading { background: url('../js/audiojs/player-graphics.gif') -2px -31px no-repeat; }
+.audiojs .error { background: url('../js/audiojs/player-graphics.gif') -2px -61px no-repeat; }
+.audiojs .pause { background: url('../js/audiojs/player-graphics.gif') -2px -91px no-repeat; }
+
+.audiojs .scrubber
+{
+    position: relative;
+    float: left;
+    width: 60%;
+    background: #263b6a;
+    height: 14px;
+    margin: 5px 0px;
+    overflow: hidden;
+    border: 1px dashed #ccc;
+}
+
+.audiojs .progress
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 14px;
+    width: 0px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.audiojs .loaded
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 14px;
+    width: 0px;
+    background-color: #6181c6;
+}
+
+.audiojs .time
+{
+    float: right;
+    width: 25%;
+    height: 24px;
+    line-height: 24px;
+    margin: 0px auto;
+    padding: 0;
+    // border-left: 1px dashed #dddddd;
+    color: #ddd;
+}
+
+.audiojs .time em
+{
+    padding: 0px 2px 0px 0px;
+    color: #f9f9f9;
+    font-style: normal;
+}
+
+.audiojs .time strong
+{
+    padding: 0px 0px 0px 2px;
+    color: inherit;
+    font-weight: normal;
+}
+
+.audiojs .error-message
+{
+    float: left;
+    display: none;
+    margin: 0px 10px;
+    height: 24px;
+    width: 400px;
+    overflow: hidden;
+    line-height: 24px;
+    white-space: nowrap;
+    color: #fff;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+.audiojs .error-message a
+{
+    color: #eee;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #999;
+    white-space: wrap;
+}
+
+.playing .play, .playing .loading, .playing .error
+{
+    display: none;
+}
+
+.playing .pause
+{
+    display: block;
+}
+
+.loading .play, .loading .pause, .loading .error
+{
+    display: none;
+}
+
+.loading .loading
+{
+    display: block;
+}
+
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading
+{
+    display: none;
+}
+
+.error .error
+{
+    display: block;
+}
+
+.error .play-pause p
+{
+    cursor: auto;
+}
+
+.error .error-message
+{
+    display: block;
+}

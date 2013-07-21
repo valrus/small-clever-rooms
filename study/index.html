@@ -1,0 +1,27 @@
+{% extends 'room.html' %}
+{% set active_page = "study" %}
+
+{% set pieces = [
+  ("Year-End Music Posts",
+    [("Favorite Albums in 2012", "music", "music2012"),
+     ("Favorite Music of 2011", "music", "music2011"),
+     ("Favorite Music of 2010", "music", "music2010"),
+     ("Favorite Music of 2009", "music", "music2009"),
+     ("Favorite Music of 2008", "music", "music2008"),
+     ("Favorite Music of 2007", "music", "music2007"),
+     ("Favorite Music of 2006", "music", "music2006")]
+  )
+] -%}
+
+{% block content %}
+<div class="text">
+{% for category, piece_list in pieces %}
+  <h3>{{ category }}</h3>
+  <ul>
+  {% for piece, cat, href in piece_list %}
+    <li><a href="{{ '%s/%s.html'|format(cat, href) }}">{{ piece }}</a></li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+</div>
+{% endblock %}

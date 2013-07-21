@@ -1,0 +1,28 @@
+{% extends 'longform.html' %}
+{% set newer = posts[:posts.index(post)]|last|d() %}
+{% set older = posts[posts.index(post) + 1]|d() %}
+
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ get_asset('css/blogpost.css') }}" />
+{% endblock %}
+
+{% block content %}
+{{ post.content }}
+{% endblock %}
+
+{% block footer -%}
+      <div id="adjposts">
+        <div id="prevpost">{% if older %}←<a href="{{ get_url(older.url) }}">{{ older.title }}</a>{% endif %}</div><!--
+     --><div id="nextpost">{% if newer %}<a href="{{ get_url(newer.url) }}">{{ newer.title }}</a>→{% endif %}</div>
+      </div>
+      {{ super() }}
+{%- endblock %}
+
+{% block returnlink %}
+{{ get_url('/livingroom/') }}
+{% endblock %}

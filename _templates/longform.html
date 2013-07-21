@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    {% block head %}
+    <title>small clever rooms</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ get_asset('css/reset.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ get_asset('css/typography.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ get_asset('css/pygments.css') }}" />
+    {% endblock head %}
+  </head>
+
+  <body>
+    {% block body %}
+    <div id="return"><a href="{% block returnlink %}{{ get_url('/study/') }}{% endblock %}"><img src="{{ get_asset('images/title.png') }}" /></a></div>
+    <div id="column">
+      <div id="main">
+      <h1>{% block title %}{% endblock %}</h1>
+      {% block content %}
+      {% endblock content %}
+      </div>
+      <div id="footer">
+        {% block footer %}
+        {% endblock footer %}
+        {% block colophon %}
+        <p>Typeset in Google's <a href="http://www.google.com/webfonts/specimen/PT+Sans">PT Sans</a> and <a href="http://www.google.com/webfonts/specimen/Crete+Round">Crete Round</a>. Want to email me? My email is my first initial and last name at gmail.com.</p>
+        {% endblock colophon %}
+      </div>
+    </div>
+    {% endblock body %}
+  </body>
+</html>
