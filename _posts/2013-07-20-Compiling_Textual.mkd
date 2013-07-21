@@ -1,6 +1,7 @@
 ---
 layout: post.images.html
 title: Compiling Textual
+summary: Circumventing the App Store for an Open-Source IRC Client.
 tags: [textual, irc, xcode]
 ---
 

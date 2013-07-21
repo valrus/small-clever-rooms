@@ -1,6 +1,7 @@
 ---
 layout: post.html
 title: Converting a Module to a Package
+summary: Python code organization.
 tags: [python, module, package]
 ---
 
