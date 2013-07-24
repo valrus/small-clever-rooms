@@ -201,10 +201,10 @@ a:hover
 
 .designinfo
 {
-  margin-top: 5px;
   text-align: right;
   color: white;
   background-color: inherit;
+  font-size: smaller;
 }
 
 .designinfo a
@@ -221,8 +221,8 @@ a:hover
 
 h1
 {
-  margin: 10px 0 -40px -2px;
-  padding: 0 10px 40px 9px;
+  margin: 10px 0 0 0;
+  padding: 0 10px;
   font-size: 16px;
   color: #ffffff;
   background-color: inherit;
@@ -289,4 +289,15 @@ blockquote
 
 li ol, li ul {
   padding-left: 1em;
+}
+
+.archive-year {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: large;
+  padding-left: 0;
+  font-weight: 700;
+  padding-bottom: 0.125ex;
 }
