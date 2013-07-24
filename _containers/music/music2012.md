@@ -1,11 +1,11 @@
-{% extends "longform.html" %}
+---
+layout: longform-page.html
+title: Favorite Albums in 2012
+---
 
-{% block title %}Favorite Albums in 2012{% endblock %}
+As always, a disclaimer: I don&#8217;t claim these are the <em>best</em> albums of 2012, or even that they&#8217;re my favorite albums <em>released</em> in 2012. I heard a very small fraction of albums released in 2012, and I hope to discover more in future years! But these are the ones that I found myself returning to most frequently this year.
 
-{% block content %}
-<p>As always, a disclaimer: I don&#8217;t claim these are the <em>best</em> albums of 2012, or even that they&#8217;re my favorite albums <em>released</em> in 2012. I heard a very small fraction of albums released in 2012, and I hope to discover more in future years! But these are the ones that I found myself returning to most frequently this year.</p>
-
-<p>I&#8217;m linking to recordings of the songs on YouTube&#8212;official music videos where possible&#8212;because as much as I like writing about music (sometimes), I certainly don&#8217;t think I can do all these songs justice with my words alone. But I hope I&#8217;ll entice you to spend a few minutes checking some of them out if you haven&#8217;t heard them, and if you like what you hear, I hope you&#8217;ll throw down some cash somewhere and buy &#8217;em. I don&#8217;t get any money if you do.</p>
+I&#8217;m linking to recordings of the songs on YouTube&#8212;official music videos where possible&#8212;because as much as I like writing about music (sometimes), I certainly don&#8217;t think I can do all these songs justice with my words alone. But I hope I&#8217;ll entice you to spend a few minutes checking some of them out if you haven&#8217;t heard them, and if you like what you hear, I hope you&#8217;ll throw down some cash somewhere and buy &#8217;em. I don&#8217;t get any money if you do.
 
 <ol>
 <li value="10"> Liars - <em>Wixiw</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Wixiw.jpg')|urlencode }}" />
@@ -35,7 +35,7 @@
 <p>Philip Larkin famously wrote &#8220;They fuck you up, your mum and dad&#8221;, and Menomena stick pretty religiously to that theme in their lyrics. Many of them seem like exorcism of some lingering demons springing from Harris&#8217;s mom&#8217;s helicopter parenting or Seim&#8217;s mom&#8217;s death, but the two do an admirable job of balancing on the knife edge between unsympathetic self-pity and unrelenting pathos. The lyrics, though heavy, are sprinkled with humor and poking fun at themselves: Harris&#8217;s &#8220;N-n-now I&#8217;m a failure / Cursed with male genitalia&#8221; and &#8220;Now I&#8217;m getting used to getting used by you&#8221; in &#8220;Pique&#8221; and Seim&#8217;s &#8220;Hail Mary / You&#8217;re conveniently buried this evening&#8221; that kicks off &#8220;Baton.&#8221; This is Menomena, this mix between the sublimated and the ridiculous.</p>
 </li>
 
-<li value="7"> Killer Mike - <em>R.A.P. Music</em> <img class="albumcover" src="{{ get_asset('images/covers2012/R.A.P.%20Music.jpg')|urlencode }}" />
+<li value="7"> Killer Mike - <em>R.A.P. Music</em> <img class="albumcover" src="{{ get_asset('images/covers2012/R.A.P. Music.jpg')|urlencode }}" />
 
 <p>Before this year, my only exposure to Killer Mike was his execrable guest verse on the awful &#8220;Snappin&#8217; and Trappin&#8217;&#8221; on OutKast&#8217;s incredibly overrated <em>Stankonia</em>, a track that could not cause me to hit the skip button fast enough whenever it came on&#8212;and after &#8220;Ms. Jackson&#8221;, no less! The nerve!</p>
 
@@ -55,7 +55,7 @@
 <p>Bottom line: I can see someone being lukewarm or indifferent to <em>Plumb</em>, maybe. It&#8217;s not groundbreaking, it doesn&#8217;t rock hard, it won&#8217;t change your life. But I can&#8217;t imagine anyone disliking it. I said the same thing about the New Pornographers until I met Jenn, but Jenn likes <em>Plumb</em>, or at least doesn&#8217;t dislike it. My brother likes it. My mom would almost certainly like it. Hell, my grandma probably wouldn&#8217;t complain if I threw it on. And there&#8217;s always space on my year-end list for music that&#8217;s agreeable.</p>
 </li>
 
-<li value="5">Shearwater, <em>Animal Joy</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Animal%20Joy.jpg')|urlencode }}" />
+<li value="5">Shearwater, <em>Animal Joy</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Animal Joy.jpg')|urlencode }}" />
 
 <p>I hesitated for a second just now, thinking about whether I should rightly let <em>Animal Joy</em> displace my #4. In the end, as you see, I did not, and so let&#8217;s just get out of the way up front that the main reason is probably the boring, uninspired closing track, &#8220;Star of the Age.&#8221; Honestly I usually skip it. Nothing chaps my ass like a weak closing track, it turns out. But let&#8217;s talk about the rest of <em>Animal Joy</em>.</p>
 
@@ -64,7 +64,7 @@
 <p>My first exposure to Shearwater was their more meditative, difficult 2008 album <em>Rook</em>, which I enjoyed but didn&#8217;t offer quite the simply cathartic pleasures <em>Animal Joy</em> does. I expect to enjoy <em>Rook</em>&#8217;s subtler approach more if I go back to it, now that the blunt instrument of <em>Animal Joy</em> has more forcibly acquainted me with Shearwater&#8217;s M.O. At heart, it&#8217;s just a straight up rock album, accessible and pretty straightforward. But Shearwater give it a fierce, graceful spin of their own, and I think it&#8217;s a fantastic introduction to the band.</p>
 </li>
 
-<li value="4">Frank Ocean, <em>Channel Orange</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Channel%20Orange.png')|urlencode }}" />
+<li value="4">Frank Ocean, <em>Channel Orange</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Channel Orange.png')|urlencode }}" />
 
 <p>As far as I&#8217;m concerned, <em>Channel Orange</em> delivers on all the promise Frank Ocean showed on last year&#8217;s free mixtape <em>Nostalgia, Ultra</em>. That album had its moments but was quite uneven; <em>Channel Orange</em> is a bit, too, but the strength of the whole is such that the weaker bits can be forgiven: mere transitions as the album hops from strength to strength.</p>
 
@@ -73,7 +73,7 @@
 <p>Besides these nearly uncontested pleasures, though, there&#8217;s the seamless blend of dead-eyed ennui and emotional tension on <a href="http://www.youtube.com/watch?v=RJIr8YiK3_Y">&#8220;Super Rich Kids&#8221;</a>, with its steady piano thump and guest verse from Earl Sweatshirt that almost makes me want to look past head provocateur Tyler&#8217;s childish antics and give these Odd Future kids another look. There&#8217;s the skeptical examination of drugs&#8212;which enable overwhelming affluence in &#8220;Lost&#8221; even as they tear down the two protagonists of <a href="http://www.youtube.com/watch?v=FKMbPqDIIbU">&#8220;Crack Rock&#8221;</a>&#8212;and sympathetic but unsentimental portraits of troubled women in the dreamy &#8220;Pilot Jones&#8221; and <a href="http://www.youtube.com/watch?v=o85RN6YviC8">&#8220;Monks&#8221;</a>. And behind it all, there&#8217;s Frank Ocean, of the golden voice, songwriter to the rich and famous, following through.</p>
 </li>
 
-<li value="3">the Mountain Goats, <em>Transcendental Youth</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Transcendental%20Youth.jpg')|urlencode }}" />
+<li value="3">the Mountain Goats, <em>Transcendental Youth</em> <img class="albumcover" src="{{ get_asset('images/covers2012/Transcendental Youth.jpg')|urlencode }}" />
 
 <p>2008 was my Year of the Mountain Goats, where I somewhat uncharacteristically ignored almost all new music and instead took a swan dive into tMG&#8217;s gargantuan back catalog. None of their output since then has left me quite as enraptured as I was that year, though I don&#8217;t know whether this is because of some fundamental stylistic shift or just because I haven&#8217;t been drinking from the firehose like in 2008.</p>
 
@@ -84,7 +84,7 @@
 <p>There are places where the vaunted horn section just adds some extra flavor to what would otherwise be a fine Mountain Goats track, as in &#8220;Cry for Judas.&#8221; But <em>Transcendental Youth</em>&#8217;s <a href="http://www.youtube.com/watch?v=q6RQwx3r1BU">closer and title track</a> would be a much different and more earthly thing without the swell of the horns lifting it. With each successive album since <em>Tallahassee</em>, where the Mountain Goats put away the boombox once and for all, I&#8217;ve enjoyed seeing them get more and more comfortable with lush production while still remaining judicious with overdubs. This is just another incremental step in that evolution, but still I continue to be surprised at where the steps land and excited to see where they&#8217;re taking us next.</p>
 </li>
 
-<li value="2">Kendrick Lamar, <em>good kid, m.A.A.d city</em> <img class="albumcover" src="{{ get_asset('images/covers2012/good%20kid%2C%20m.A.A.d%20city.jpg')|urlencode }}" />
+<li value="2">Kendrick Lamar, <em>good kid, m.A.A.d city</em> <img class="albumcover" src="{{ get_asset('images/covers2012/good kid%2C m.A.A.d city.jpg')|urlencode }}" />
 
 <p>I don&#8217;t think it took more than one full track to give me an inkling that this would be my favorite rap album of 2012. <a href="http://www.youtube.com/watch?v=yxKk9i-o8ow">&#8220;Sherane (a.k.a. Master Splinter&#8217;s Daughter)&#8221;</a> starts out like it could be a straightforward horny teenager sex jam reminiscence, but with a peculiarly dark and foreboding beat, hardly sexy at all. Despite that beat, its abrupt twist ending caught me wholly off guard. It&#8217;s a clear signal that this is an album not afraid to take some risks in the interest of telling a compelling story. I&#8217;m not linking many tracks because most of them, while great, are even better in the context of the album. More than probably anything else on this list, this is an album that needs to listened to straight through for the full effect.</p>
 
@@ -93,7 +93,7 @@
 <p>Both the rap albums on my list this year end with salvation of sorts; maybe I&#8217;m just a sucker for that kind of thing. <em>good kid</em>&#8217;s salvation feels hard-earned, hard-learned. The triumphant closer is probably my least favorite thing here&#8212;I find Lamar much more compelling elsewhere and I suspect I prefer sparse beats to lush ones like &#8220;Compton&#8221;&#8217;s&#8212;but I don&#8217;t hold it against him to want an end-run with some rap game luminaries. <em>good kid, m.A.A.d city</em> is an achievement worth some fanfare.</p>
 </li>
 
-<li value="1">Fiona Apple, <em>The Idler Wheel is Wiser than the Driver of the Screw And Whipping Cords Will Serve You More than Ropes Will Ever Do</em>  <img class="albumcover" src="{{ get_asset('images/covers2012/The%20Idler%20Wheel.jpg')|urlencode }}" />
+<li value="1">Fiona Apple, <em>The Idler Wheel is Wiser than the Driver of the Screw And Whipping Cords Will Serve You More than Ropes Will Ever Do</em>  <img class="albumcover" src="{{ get_asset('images/covers2012/The Idler Wheel.jpg')|urlencode }}" />
 
 <p>How much of my flabbergastedness at this album was due to my sleeping on Fiona Apple&#8217;s previous work? We&#8217;ll never know, but it was a revelation to me. I think the only other songs of hers I&#8217;d heard were her Big Singles, but I&#8217;d put just about any song on <em>The Idler Wheel&#8230;</em> up against any of them.</p>
 
@@ -104,4 +104,3 @@
 <p>The songs on here are just good: strikingly diverse despite the limited palette, glimmering with just about every emotion it&#8217;s possible to feel, as deeply as it&#8217;s possible to feel them. Catchy. None too long or too short, much as you might want some of them to go on longer. It&#8217;s an album not a single second of which bores me, and the one I found myself going back to most often this year.</p>
 </li>
 </ol>
-{% endblock content %}

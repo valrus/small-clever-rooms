@@ -1,8 +1,8 @@
-{% extends "longform.html" %}
+---
+layout: longform-page.html
+title: My Favorite Music In 2008
+---
 
-{% block title %}My Favorite Music In 2008{% endblock %}
-
-{% block content %}
 <p>I've been putting off my 2008 music post, because to be perfectly frank much of my music listening in the last year has consisted of mining and, eventually, memorizing the Mountain Goats' back catalog. Nevertheless I did find a fair amount of other good stuff (though much of it was also not released in 2008) and I wanted to share it. This post will be more of a hodgepodge than previous ones, not that I get the impression that people pore over my music posts anyway.</p>
 <p>Here are the albums that managed to get me out of my Mountain Goats headspace in 2008, in no particular order:</p>
 <dl>
@@ -49,4 +49,3 @@
 <li>TV On the Radio, <em>Dear Science,</em></li>
 <li>Women, <em>Women</em></li>
 </ul>
-{% endblock content %}

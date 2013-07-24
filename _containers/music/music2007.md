@@ -1,8 +1,8 @@
-{% extends "longform.html" %}
+---
+layout: longform-page.html
+title: My Favorite Music In 2007
+---
 
-{% block title %}My Favorite Music In 2007{% endblock %}
-
-{% block content %}
 <h3>Top 10 Albums of 2007, in order. Album cover pictures link to pertinent YouTube videos.</h3>
 
 <ol>
@@ -197,4 +197,3 @@
 <ul>
 <li><strong>The Field</strong>, <em>From Here We Go Sublime</em></li>
 </ul>
-{% endblock content %}

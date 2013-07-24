@@ -1,8 +1,8 @@
-{% extends "longform.html" %}
+---
+layout: longform-page.html
+title: My Favorite Music In 2009
+---
 
-{% block title %}My Favorite Music of 2009{% endblock %}
-
-{% block content %}
 <p>So I actually listened to some new music this year, although I didn't go out on too many limbs. Gonna try to put them in some semblance of order, in ascending order of how much I listened or want to listen to them; drumroll, please...</p>
 <dl>
 <dt>The Flaming Lips - <em>Embryonic</em></dt>
@@ -52,4 +52,3 @@
 </ul>
 <p>Lastly, a couple EPs that bear mentioning: Destroyer's <em>Bay of Pigs</em>, mostly just the title track, which is standard-issue Destroyer lyrics (beginning with the apt line "Listen/I've been drinking") over a surprisingly effective "ambient disco" backing track, and Moonface (actually just Spencer Krug under <em>yet another</em> pseudonym) with "Dreamland EP: marimba and shit-drums," which I've actually only listened through once because it came out last month, but right now I'm feeling like Krug can do no wrong, Random Spirit Lover notwithstanding, and of course the EP's name is an obvious winner.</p>
 <p>Here's to an awesome musical 2010. I've already got the new Vampire Weekend (preliminary verdict: too much studio fuckery, songs not as good, still fun) and the new Owen Pallett (previously Final Fantasy) (preliminary verdict: if the chips were down I might go gay for him). &lt;3 music!</p>
-{% endblock content %}
