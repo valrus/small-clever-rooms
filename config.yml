@@ -44,6 +44,13 @@ analytics:
 # Color code blocks
 pygmentize: True
 
+# Containers
+containers:
+    essays:
+        url: /study/essays/<slug>/
+    music:
+        url: /study/music/<slug>/
+
 #
 # Chances are you probably don't need to touch anything below here.
 #

@@ -1,6 +1,8 @@
 {% extends 'room.html' %}
 {% set active_page = "studio" %}
 
+{% block title %}studio{% endblock %}
+
 {% block head %}
 {{ super() }}
 <link rel="stylesheet" type="text/css" href="{{ get_asset('css/studio.css') }}" />

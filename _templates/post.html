@@ -1,18 +1,11 @@
-{% extends 'longform.html' %}
-{% set newer = posts[:posts.index(post)]|last|d() %}
-{% set older = posts[posts.index(post) + 1]|d() %}
-
-{% block title %}
-{{ post.title }}
-{% endblock %}
+{% extends 'longform-page.html' %}
+{% set container = posts.container %}
+{% set newer = container[:container.index(item)]|last|d() %}
+{% set older = container[container.index(item) + 1]|d() %}
 
 {% block head %}
 {{ super() }}
 <link rel="stylesheet" type="text/css" href="{{ get_asset('css/blogpost.css') }}" />
-{% endblock %}
-
-{% block content %}
-{{ post.content }}
 {% endblock %}
 
 {% block footer -%}

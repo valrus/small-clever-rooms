@@ -5,20 +5,17 @@
 
 {% block content %}
 <div class="text">
-{% for year, archive in archives %}
-  <h1>{{ year }}</h1>
-  <ul>
-  {% for month, posts in archive.months %}
-    <li>
-      <h1>{{ month }}</h1>
-      <ul>
+{% for year, archive in posts.archives.iteritems() %}
+  <li class="archive-year">
+    <h1>{{ year }}</h1>
+    <ul>
+    {% for month, posts in archive.months.iteritems() %}
       {% for post in posts %}
-        <li>{{ post.timestamp|date('%d') }} – <a href="{{ get_url(post.url) }}">{{ post.title }}</a> {{ post.summary }} </li>
+        <li>{{ post.timestamp|date('%B %d') }} – <a href="{{ get_url(post.url) }}">{{ post.title }}</a> {{ post.summary }} </li>
       {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-  </ul>
+    {% endfor %}
+    </ul>
+  </li>
 {% endfor %}
 </div>
 {% endblock %}
