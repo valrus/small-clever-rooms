@@ -53,9 +53,11 @@ p {
   margin: .8125em 0;
 }
 
+/* Not necessary with space between paragraphs
 p + p {
   text-indent:1.625em;
 }
+*/
 
 /* This is kind of ugly tbh
 p:first-of-type:first-letter {
@@ -164,21 +166,23 @@ del {
 }
 
 blockquote {
-  font-family:georgia,serif;
+  text-indent: 1em;
   font-style:italic;
-  padding:1em 1em 1.625em;
+  padding: 0 1em;
 }
 
 blockquote:before {
   content:"\201C";
   font-size:3em;
-  margin-left:-.625em;
-  font-family:georgia,serif;
+  margin-right:0.15em;
+  margin-left:-0.4em;
+  vertical-align: -0.45em;
   color:#aaa;
   line-height:0;
 }
 
 blockquote > p {
+  display:inline;
   margin:0;
   padding:0;
 }
@@ -242,4 +246,28 @@ tfoot,em,dfn {
   width: 25%;
   float: right;
   margin: 1em;
+}
+
+/* Footnotes */
+sup {
+  font-size: 0.7em;
+  line-height: 0;
+}
+
+body {
+  counter-reset: footnotecounter;
+}
+
+a.ref {
+  text-decoration: none;
+  outline: none;
+}
+
+a.ref:before {
+  content:counter(footnotecounter);
+  counter-increment: footnotecounter;
+}
+
+ol#footnotes {
+  counter-reset:footnotecounter;
 }
