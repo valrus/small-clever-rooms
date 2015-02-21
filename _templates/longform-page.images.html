@@ -1,0 +1,21 @@
+{% extends 'longform-page.html' %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ get_asset('css/bytebox.css') }}" type="text/css" media="screen" />
+<script src="{{ get_asset('js/bytebox.min.js') }}" type="text/javascript"></script>
+{% endblock head %}
+
+{% block title %}
+{{ item.title }}
+{% endblock %}
+
+{% block content %}
+{{ item.content }}
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<script type="text/javascript">bytebox.init();</script>
+{% endblock body %}
+

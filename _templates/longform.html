@@ -3,8 +3,9 @@
 {% block head %}
 <title>small clever rooms</title>
 {{ super() }}
-<link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Rosario:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" type="text/css" href="{{ get_asset('css/typography.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ get_asset('css/pygments.css') }}" />
 {% endblock head %}
@@ -20,9 +21,11 @@
   <div id="footer">
     {% block footer %}
     {% endblock footer %}
+    <div id="colophon">
     {% block colophon %}
-    <p>Typeset in Google's <a href="http://www.google.com/webfonts/specimen/PT+Sans">PT Sans</a> and <a href="http://www.google.com/webfonts/specimen/Crete+Round">Crete Round</a>. Want to email me? My email is my first initial and last name at gmail.com.</p>
+    <p>Typeset in <a href="http://www.omnibus-type.com/">Omnibus-Type</a>'s <a href="https://www.google.com/fonts/specimen/Rosario">Rosario</a> and <a href="http://www.huertatipografica.com/">Huerta Tipográfica</a>'s <a href="https://www.google.com/fonts/specimen/Bitter">Bitter</a>, hosted by <a href="https://www.google.com/fonts">Google Fonts</a>. Want to email me? My email is my first initial and last name at gmail.com. I'm also on <a href="https://twitter.com/valrus">Twitter</a>.</p>
     {% endblock colophon %}
+    </div>
   </div>
 </div>
 {% endblock body %}

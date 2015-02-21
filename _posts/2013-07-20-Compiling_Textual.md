@@ -2,7 +2,7 @@
 layout: post.images.html
 title: Compiling Textual
 summary: Circumventing the App Store for an Open-Source IRC Client.
-tags: [textual, irc, xcode]
+tags: [textual, irc, xcode, tutorial]
 ---
 
 Okay, I'm sure that by the time I need this again it will be defunct in some way because such is the nature of XCode, but nevertheless I've done this twice and struggled for way longer than necessary with what I think was more or less the same thing both times. So, for my own reference and that of anyone trying this for themselves, here's the steps for how I successfully compiled [Textual](https://github.com/Codeux/Textual) 3.1.0 with XCode 4.6.3. These instructions assume you have XCode and Git installed and some basic familiarity with the command line.

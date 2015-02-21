@@ -1,0 +1,15 @@
+/* TEAM */
+  Everything: Ian McCowan
+  Contact: imccowan [at] gmail.com
+  Twitter: @valrus
+  From: Redmond, WA, USA
+
+/* THANKS */
+  Base for site design: Teun van Vegchel
+  Design at OSWD: http://www.oswd.org/design/preview/id/3166
+
+/* SITE */
+  Language: English only :(
+  Doctype: HTML5
+  Static site generator: Mynt
+  Tools: Sublime Text, Espresso, MacVim

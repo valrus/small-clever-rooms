@@ -9,11 +9,15 @@
 }
 
 #bb_div{
-	padding: 5px;
+	padding: 20px;
 	z-index: 100;
 	background-color:rgb(37, 58, 107);
 	position: absolute;
-	text-align: left;
+	text-align: center;
+}
+
+div#bb_div img {
+    max-width: 100%;
 }
 
 #bb_a{
@@ -21,14 +25,12 @@
 
 #bb_da{
 	margin: 0 auto;
-	margin-top: 10px;
 	padding: 5px;
-	height: 20px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #999999;
+	color: #FFFEF0;
 	text-indent: 10px;
+  font-family: "Bitter", "Palatino Linotype", "Georgia", serif;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 #bb_l{

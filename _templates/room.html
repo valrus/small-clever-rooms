@@ -3,7 +3,6 @@
 {% set rooms = [
   ('/study/', 'study', 'Study'),
   ('/studio/', 'studio', 'Studio'),
-  ('/', 'index', 'Vestibule'),
   ('/livingroom/', 'livingroom', 'Living Room')
 ] -%}
 {% set active_page = active_page|default('index') -%}
@@ -11,7 +10,8 @@
 {% block head %}
 {{ super() }}
 <title>a small clever {% block title %}{% endblock %}</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Rosario:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" type="text/css" href="{{ get_asset('css/blueprint.css') }}" />
 {% endblock head %}
 

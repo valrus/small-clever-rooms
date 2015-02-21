@@ -1,8 +1,8 @@
 body {
-  font-family: "PT Sans","lucida sans unicode", sans-serif;
+  font-family: "Rosario","lucida sans unicode", sans-serif;
   line-height: 1.5em;
   background-color:rgb(37, 58, 107);
-  color:rgb(37, 58, 107);
+  color: rgb(64, 82, 124);
   font-size-adjust:none;
   font-style:normal;
   font-variant:normal;
@@ -31,21 +31,14 @@ body {
 }
 
 #footer {
-  font-family: "PT Sans","lucida sans unicode", sans-serif;
+  font-family: "Rosario","lucida sans unicode", sans-serif;
   color: #FFFEF0;
   margin: 20px 0;
 }
 
-#footer p {
-  padding: 0 3em;
-}
-
-#footer a {
-  color: #ffd792;
-}
-
 #colophon {
   margin-top: 1em;
+  font-size: 90%;
 }
 
 p {
@@ -53,23 +46,26 @@ p {
   margin: .8125em 0;
 }
 
-/* Not necessary with space between paragraphs
-p + p {
-  text-indent:1.625em;
+body i {
+  font-style: italic;
 }
-*/
 
-/* This is kind of ugly tbh
-p:first-of-type:first-letter {
-  float:left;
-  font-family: "Crete Round", "Palatino Linotype", "Georgia", serif;
-  font-size:3em;
-  font-weight:700;
-  line-height:1em;
-  margin-bottom:-.2em;
-  padding:.2em .1em 0 0;
+#footer p {
+  padding: 0 3em;
+  font-weight: normal;
 }
-*/
+
+#footer a {
+  color: #ffd792;
+}
+
+img {
+    max-width: 95%;
+}
+
+.fullwidth {
+    clear: both;
+}
 
 p img {
   float:left;
@@ -83,10 +79,10 @@ p img.right {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Crete Round", "Palatino Linotype", "Georgia", serif;
+  font-family: "Bitter", "Palatino Linotype", "Georgia", serif;
+  font-weight: normal;
   line-height: 1.15em;
   color: rgb(37, 58, 107);
-  font-weight:400;
 }
 
 h1 {
@@ -114,22 +110,12 @@ h5,h6 {
   margin:1.238em 0;
 }
 
-/*
-ul {
-  list-style-position:outside;
-}
-
-li ul,li ol {
-  margin:0 1.625em;
-}
-*/
 dl dd {
   margin-left:1.625em;
 }
 
 a {
   color:#005AF2;
-  text-decoration:none;
 }
 
 a:hover {
@@ -165,10 +151,16 @@ del {
   color:#000;
 }
 
+small {
+  font-size: 80%;
+  line-height: 80%;
+}
+
 blockquote {
   text-indent: 1em;
   font-style:italic;
   padding: 0 1em;
+  background: #F1F0E1;
 }
 
 blockquote:before {
@@ -187,14 +179,17 @@ blockquote > p {
   padding:0;
 }
 
+blockquote > pre {
+  font-style: normal;
+  text-indent: 0;
+}
+
 pre,code {
   white-space:pre;
-  /* margin:1.625em 0; */
 }
 
 pre,code,tt {
-  font:1em monospace;
-  line-height:1.5;
+  line-height:1.25;
 }
 
 tt {
@@ -203,6 +198,7 @@ tt {
 }
 
 hr {
+  margin-top:1.625em;
   margin-bottom:1.625em;
 }
 
@@ -220,6 +216,7 @@ dl {
 
 dl dt,th,strong,dfn {
   font-weight:700;
+  margin-top: 1em;
 }
 
 tfoot,em,dfn {
@@ -238,8 +235,29 @@ tfoot,em,dfn {
   margin:.1em;
 }
 
-.mono {
-  font-family:"Courier New", Courier, monospace;
+pre {
+  font-family: "Ubuntu Mono", "Courier New", Courier, monospace;
+  font-size: 85%;
+}
+
+code {
+  font-family: "Ubuntu Mono", "Courier New", Courier, monospace;
+}
+
+.code table {
+  margin-left: -1.5em;
+}
+
+.code tr,th,td {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.linenos {
+  width: 1.5em;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .albumcover {
@@ -250,7 +268,7 @@ tfoot,em,dfn {
 
 /* Footnotes */
 sup {
-  font-size: 0.7em;
+  font-size: 0.85em;
   line-height: 0;
 }
 

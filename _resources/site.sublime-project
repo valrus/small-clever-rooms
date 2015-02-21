@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/valrus/Sites/_src"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/valrus/Sites/_src/_drafts"
+		}
+	]
+}

@@ -37,7 +37,7 @@ var bytebox=function(){
             else if(st==0){
                 d=document;
                 n=d.createElement('img');
-                n.src="images/loading.gif";
+                n.src="../images/load-dark.gif";
                 l=d.createElement('div');
                 l.style.width="126px";
                 l.style.height="22px";
@@ -66,20 +66,20 @@ var bytebox=function(){
             i=d.createElement('div');
             i.id='bb_div';
             tp=(((bytebox.h()/2)-((ih/2)+25))+bytebox.t());
-            lp=((bytebox.w()/2)-((im.width/2)+20));
-            if((tp+ih+60)>=bytebox.ht()){
+            lp=((bytebox.w()/2)-((im.width/2)+40));
+            if((tp+ih+60)>=bytebox.ht()) {
                 tp=bytebox.ht()-tp;
                 tp=bytebox.ht()-(ih+60);
-                i.style.top=tp+"px";
-                }
-            else if(tp<50){tp=50;i.style.top="50px"}
-            else{
-                i.style.top=tp+"px";
-            }            
+            }
+            else if(tp<50) {
+                tp=50;
+            }
+            i.style.top=tp+"px";
             i.style.left=lp+"px";
-            i.style.width=im.width+"px";
-            i.cw=im.width;i.ch=im.height;            
-            i.style.height=(tit)?(im.height+40)+"px":im.height+"px";
+            i.style.width=im.width+20+"px";
+            i.cw=im.width;
+            i.ch=im.height;            
+            i.style.height=(tit)?(im.height+60)+"px":im.height+20+"px";
             
             n_i=d.createElement('img');
             n_i.onclick=bytebox.r;

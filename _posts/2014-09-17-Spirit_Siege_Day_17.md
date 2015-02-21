@@ -1,0 +1,32 @@
+---
+layout: post.html
+title: "25 Reasons to Spirit Siege Day 17: Self-Balancing Metagame"
+tags: [spirit_siege, 25_reasons_to_spirit_siege]
+summary: "Reason number 17 of #25ReasonsToSpiritSiege: It has an ingenious system to smooth out under- and overpowered cards."
+---
+
+This post is part of the [#25ReasonsToSpiritSiege]({{ get_url('2014/09/01/Spirit_Siege_Day_1/index.html') }}) series. Click that link for a summary!
+
+Today's reason to support *Spirit Siege* is an interesting and kind of egghead-y one (in case you couldn't tell from the name) about a planned feature that I don't think has been 100% nailed down yet. But it's an innovative feature, one that will contribute to *Spirit Siege*'s [uniqueness]({{ get_url('2014/09/01/Spirit_Siege_Day_1/index.html') }}), and one that will have a lot of interesting and beneficial ramifications if it's implemented well.
+
+If "self-balancing metagame" is gibberish to you, let me define the terms and give you some context. (If not, you can skip to the juicy details <a href="#deets">here</a>.)
+
+The actual *game* of _Spirit Siege_ is the part that you can see in [this video](https://www.youtube.com/watch?v=w1CgPs3eZXo), where you have a deck of cards and you play them as units on a board. The game itself probably, depending on who you ask, also includes the part where you decide what cards to put in your deck. The <em>meta</em>game is a somewhat amorphous concept which is explored for _Magic: The Gathering_ in detail in [this column](http://archive.wizards.com/Magic/magazine/article.aspx?x=mtgcom/academy/19) in a way that maps fairly cleanly to _Spirit Siege_, but if you're not down to read a couple thousand _more_ words in addition to the ones already in this post, I think "assessing the value of your cards in relation to the others that you're likely to encounter" is a reasonable distillation.
+
+So: that's the metagame. A real simple example using the currently available cards: dragons are powerful and dangerous units if your opponent plays them, but knights are good at countering them. So while knights are also a decent unit on their own, metagame considerations make them somewhat more valuable because they can be a (relatively) cheap and effective way to stop a dragon, which can do a lot of harm if you don't have a good way to handle it.
+
+This last example brings us to the other concept in this reason's name. Balance basically means there shouldn't be any resources that are drastically more or less powerful than others. A strategy game succeeds or fails in its capacity for interesting decision making, but underpowered resources aren't interesting once you realize they're weak: you just avoid using them. Overpowered ("OP") things are even worse: not only does the choice to use them become a no-brainer, but then *everyone* starts using them, and then everything else ends up weak in comparison. One overpowered thing can throw a whole game's balance off, which is why developers often hasten to "nerf" or artificially weaken such things before that happens. And this often elicits complaints from players who were enjoying their overpowered shadow elf sorcerer or whatever just fine, thank you. Balancing strategy games is, well, a delicate balance.
+
+Unfortunately, game designers who want to keep adding content to their game will never be able to avoid accidentally adding an OP element once in a while. Any amount of pre-release testing they can do on that content won't be able to catch all the things that can happen when they let tens of thousands of gamers take a crack at it.
+
+So. That's where _Spirit Siege_'s self-balancing metagame comes in.
+
+<h3 id="deets">How will it work?</h3>
+
+The basic idea behind the self-balancing metagame is periodic, automatic adjustment of card costs (where by "costs" I mean in-game resource costs, not real-money costs) based on some combination of their popularity and how often they're used by winners. If a card gets really popular and a lot of players are using it to crush other players, its cost will start to go up. This way, OP cards will automatically get nerfed, but incrementally; if you discover that some unit is actually super great in a way the designers hadn't considered (you sly fox, you), it won't suddenly be rendered useless by the godlike hands of the devs reaching down out of the æther to squash it like a bug. Instead, its cost will taper up, gently, gradually, until it's maybe still good but no longer overpowered. So sorry, no-brainers won't be allowed for long in _Spirit Siege_, but you can have your OP fun for a little while, and while the nerfing is going on you'll get some time to adjust your strategy if you need to.
+
+Maybe one of the cleverest things about this is that it will be just _how the game works_, and that will be the case from the outset. If a card gets nerfed, (we all hope) there will be no grounds for people to complain about it. They can't try to appeal to a devteam that had to make a tough, subjective call that they might be swayed into reversing. The autobalancing is just Part of the Rules, and players will have to strategize (thereby creating a _meta_-metagame??!) around it. This will save everyone a lot of time. Players can skip the complaining about nerfs and just play _Spirit Siege_, and the devs can skip having to respond to those complaints and instead work on adding new content at a brisk pace. Heck, this even opens the doors to the devs intentionally adding units that they know are OP as little bonuses for people who are really on top of their game to (ab)use for a little while, until they get auto-balanced.
+
+I gotta tell you, I was dreading writing this post a little bit because it's kind of a complicated one and I was afraid it would be time-consuming. As it turns out (and as you can see), it was kind of time-consuming. But I actually kind of got into it, because this auto-balancing is just _such a damn good idea_ that I ended up being excited to think through the implications of it. I'm really looking forward to seeing what kinds of dynamics result as it plays out on a large scale.
+
+Anyway. My point of all this is: you should [support damn good ideas by pledging to Spirit Siege](https://www.kickstarter.com/projects/1796662059/spirit-siege-your-five-minute-strategy-game-fix).

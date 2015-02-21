@@ -1,5 +1,5 @@
 {% extends 'longform-page.html' %}
-{% set container = posts.container %}
+{% set container = posts.items %}
 {% set newer = container[:container.index(item)]|last|d() %}
 {% set older = container[container.index(item) + 1]|d() %}
 

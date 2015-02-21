@@ -8,10 +8,11 @@
 {% for year, archive in posts.archives.iteritems() %}
   <li class="archive-year">
     <h1>{{ year }}</h1>
-    <ul>
+    <dl>
     {% for month, posts in archive.months.iteritems() %}
       {% for post in posts %}
-        <li>{{ post.timestamp|date('%B %d') }} – <a href="{{ get_url(post.url) }}">{{ post.title }}</a> {{ post.summary }} </li>
+        <dt>{{ post.timestamp|date('%B %d') }}<br /><a href="{{ get_url(post.url) }}">{{ post.title }}</a></dt>
+        <dd>{{ post.summary }}</dd>
       {% endfor %}
     {% endfor %}
     </ul>

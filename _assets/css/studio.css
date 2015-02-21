@@ -1,12 +1,12 @@
 .playlist
 {
     padding-top: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 h1
 {
-    color: #fff;
+    color: #FFFEF0;
     font-size: 1.2em;
     padding: 14px 2px 0px 0;
     margin: 0px 0px 0px 0;
@@ -54,7 +54,6 @@ ol li
 
 ol li>a
 {
-//    display: block;
     text-indent: -3.3ex;
     padding: 0px 0px 0px 15px;
 }
