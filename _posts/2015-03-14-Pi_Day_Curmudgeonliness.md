@@ -165,7 +165,7 @@ which we designate as "the standard" one
 just because it's most convenient to us
 is a sort of mathematical "checking my privilege."
 
-Checking your privilege
+[Checking your privilege](http://geekfeminism.wikia.com/wiki/Privilege)
 just means to acknowledge the biases
 that arise from your personal experience and circumstances
 (which may differ hugely from those of other people)
@@ -177,8 +177,8 @@ about the kinds of "hot button" topics where privilege is most relevant:
 race, class, gender, religious belief, disabilities.
 And indeed it can be used that way.
 But I think it's a valuable thing
-to be aware of how your life experiences
-have been shaped by cultural forces
+to [be aware of how your life experiences
+have been shaped by cultural forces](http://blog.shrub.com/check-my-what/)
 and how those experiences
 shape your beliefs and assumptions in turn.
 
