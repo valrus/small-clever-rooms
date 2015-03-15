@@ -224,6 +224,129 @@ And maybe we'd make more progress faster even today
 if we aggressively gave more voice to people
 who don't fit in with what people assume is the default.
 
+<hr id="facts_appendix"/>
+
+### Appendix: My Favorite Facts About π
+
+Originally I omitted this section of this post,
+but I decided to add it as a palate cleanser
+and to demonstrate my solidarity with
+what I concluded earlier was the noble purpose of Pi Day:
+to spread the joy of mathematical knowledge.
+(Although I think that spreading awareness of privilege
+would be an even more noble purpose.)
+
+There are <strike>two and a half</strike> one and a half facts about pi that leap to my mind
+due to their surprisingness and elegance
+whenever the subject of "how pi is interesting" comes up.
+(One and a half because one of them is only sort of "about" pi,
+down from two and a half because in writing this I learned that one isn't actually true.)
+Here they are:
+
+#### The Basel Problem, a.k.a. the sum of the reciprocals of the squares of the natural numbers
+
+Soooo one of those names doesn't tell you anything about this problem
+and the other is maybe a little dense to try to unpack, so
+this is a maybe slightly more friendly version of it:
+<a href="http://en.wikipedia.org/wiki/Basel_problem" title="Wikipedia page for The Basel problem."><img title="The Basel Problem: what's the sum of the reciprocals of the squares of the natural numbers?" src="{{ get_asset('images/posts/Pi_Day/basel.png')|urlencode }}" class="fullwidth" /></a>
+
+(Clicking that image will take you to the Wikipedia page for the problem,
+which goes *way* more in depth than I intend to here.)
+
+I love this fact because it's easy to state precisely—
+twelve English words is *far* fewer than many interesting math problems take to state,
+and the mathematical representation is tidier still—
+but the result is extremely surprising
+and ties into some math so deep
+that I'd quickly be way over my head
+if I attempted to do more than gloss over it here.
+
+If you're not familiar with the notation,
+you only need to worry about the stuff after the second equals.
+The three things in between the equals signs all say the same thing.
+If you're not familiar with infinite sums,
+they basically ask two questions:
+"if you keep adding those fractions up,
+will the sum eventually 'even out' at a particular number?
+If so, what number is that?"
+
+Here, the answer to the first question is "yes,"
+and the answer to the second one is "π²/6".
+
+Yes! You read that right.
+If you keep adding up those fractions,
+with the squares of the natural numbers in the denominators,
+the sum will keep getting closer and closer to π²/6.
+Where does the π come in
+when we're adding up these simple fractions?
+Well, as you'll see if you check that Wikipedia article,
+the answer involves some pretty sophisticated mathematical machinery
+and (you may have to take my word for this part)
+a sizable dollop of cleverness as well.
+Just to add up some
+(ok, infinitely many)
+simple fractions,
+and get an answer that involves an irrational number!
+The problem took 90 years to solve
+after it was first posed
+and another 6 to prove rigorously.
+It's beautiful and elegant,
+one of my favorite mathematical facts.
+And as a bonus,
+it also relates to the function ζ,
+a.k.a. the [Riemann Zeta Function](http://en.wikipedia.org/wiki/Riemann_zeta_function):
+one of the most important functions in mathematics,
+with still more surprising implications
+relating to the distribution of prime numbers,
+one of math's most enduring mysteries.
+
+#### <strike>Average river sinuosity</strike>
+
+The sinuosity of a river is
+the ratio of its length with all its twists and turns included
+to its length "as the crow flies."
+Up until this very day,
+I believed that the average sinuosity of the world's rivers
+was approximately equal to pi.
+
+But thanks to the Internet,
+it's not difficult to check this
+and find that it's [almost certainly not true](http://pimeariver.com).
+A gentleman who writes for the Guardian used the data
+crowdsourced in that last link
+to write a [column](http://www.theguardian.com/science/alexs-adventures-in-numberland/2015/mar/14/pi-day-2015-pi-rivers-truth-grime) about the debunking.
+It turns out that the "fact" was based in part on a simulation,
+not actual measurements of real-world rivers.
+Perhaps in a more mathematically ideal world,
+where rivers are free to go where they will
+without being disrupted by weather or other large-scale geographic events,
+it would actually be true.
+But in this one,
+it appears it's actually not.
+
+#### Euler's identity
+
+This is my "half a fact" about pi,
+which *includes* pi but isn't really *about* it,
+but for my money it's the most beautiful and elegant fact in mathematics.
+Behold:
+
+<a href="http://en.wikipedia.org/wiki/Euler's_identity" title="Wikipedia page for Euler's identity."><img title="Euler's identity, the most beautiful equation in mathematics." src="{{ get_asset('images/posts/Pi_Day/euler.png')|urlencode }}" class="fullwidth" /></a>
+
+You don't have to take my word for it.
+The Wikipedia article linked from the picture above
+has an entire section entitled "Mathematical beauty."
+Euler's identity is even more elegant to state than the Basel problem,
+and it ties together five of the most fundamental and important mathematical constants—
+*e*, *i*, π, 0 and 1—
+in a totally unexpected and concise way.
+If there's one thing that you as a (presumed) layperson can do
+to understand why mathematicians so often refer to their discipline as "beautiful,"
+it's to learn about the different parts of Euler's identity
+and why it's so remarkable that they fit together
+in such a simple way.
+*That* would be an excellent way to celebrate Pi Day.
+
 <hr />
 
 <ol>
