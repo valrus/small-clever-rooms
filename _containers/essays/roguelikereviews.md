@@ -73,9 +73,16 @@ If I let my eyes unfocus a little bit
 I can see it as the bullet hell it is
 and ignore the repulsive theme
 and how I'm playing a naked child shooting tears at poop.
+
 (There's more to it than that, of course.
 But what sticks out is its trying too hard to provoke,
-not )
+not the seemingly serious but sort of half-baked Biblical theme of child abuse.
+That theming takes the same kitchen-sink approach as the sprawling list of collectibles
+but fares worse because of its trying to convey a message.
+That message, whatever it may be, is totally indistinct,
+smashed into a vague "religious-inspired child abuse is bad"
+by the sheer weight of the imagery it hauls out at every opportunity.)
+
 I get past these things
 because the tremendous diversity of items
 yields even more staggering possibilities for character builds
