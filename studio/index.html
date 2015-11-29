@@ -53,25 +53,27 @@
 
 {% set songs = [
   ("Newer Songs",
-    [("Headphones", None),
-     ("The Ballad of Nate Phelps", None),
-     ("The Librarian", None),
-     ("My Mouth", None),
-     ("Open Doors", None),
-     ("The Other Shoe", None),
-     ("Tentacles - Just Not That Creepy", None)]),
+    [("A Dead Man", None, True),
+     ("Where No One Has Gone Before", None, True),
+     ("Headphones", None, True),
+     ("The Ballad of Nate Phelps", None, True),
+     ("The Librarian", None, True),
+     ("My Mouth", None, True),
+     ("Open Doors", None, True),
+     ("The Other Shoe", None, True),
+     ("Tentacles - Just Not That Creepy", None, False)]),
   ("Older Songs",
-    [("Chains of Gold/Seven Months", None),
-     ("Dreams of the Ocean", None),
-     ("Fucking Thermodynamics", None),
-     ("If I Tell You", None),
-     ("Rufous", None),
-     ("The Semiotician's Breakup Song", None)]),
+    [("Chains of Gold/Seven Months", None, False),
+     ("Dreams of the Ocean", None, False),
+     ("Fucking Thermodynamics", None, False),
+     ("If I Tell You", None, False),
+     ("Rufous", None, False),
+     ("The Semiotician's Breakup Song", None, False)]),
   ("Covers",
-    [("We Want a Rock", "They Might Be Giants"),
-     ("+1s", "Okkervil River"),
-     ("Going to Georgia", "the Mountain Goats"),
-     ("If You See Light", "the Mountain Goats")]
+    [("We Want a Rock", "They Might Be Giants", False),
+     ("+1s", "Okkervil River", False),
+     ("Going to Georgia", "the Mountain Goats", False),
+     ("If You See Light", "the Mountain Goats", False)]
   )
 ] -%}
 
@@ -82,10 +84,14 @@
     {% for song_category, song_list in songs %}
       <h1>{{ song_category }}</h1>
       <ol>
-      {% for song, artist in song_list %}
+      {% for song, artist, lyric in song_list %}
         <li><a href="#" class="music_play" data-src="{{ get_asset('music/%s.mp3')|format(song) }}">{{ song }}</a>
           {% if artist %}({{ artist }}){% endif -%}
-          <span class="music_download"><a href="{{ get_asset('music/%s.mp3')|format(song)|urlencode }}">⬇</a></span></li>
+          <span class="music_icons">
+            {% if lyric %}<a title="Lyrics" href="{{ get_url('studio/lyrics/%s.html')|format(song)|replace(' ', '-') }}">☰</a>&nbsp;{% endif -%}
+            <a title="Download" href="{{ get_asset('music/%s.mp3')|format(song)|urlencode }}">⬇</a>
+          </span>
+        </li>
       {% endfor %}
       </ol>
     {% endfor %}

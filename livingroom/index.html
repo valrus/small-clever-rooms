@@ -7,6 +7,7 @@
 <div class="text">
 {% for year, archive in posts.archives.iteritems() %}
   <li class="archive-year">
+    <hr />
     <h1>{{ year }}</h1>
     <dl>
     {% for month, posts in archive.months.iteritems() %}

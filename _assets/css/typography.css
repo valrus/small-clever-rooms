@@ -188,6 +188,10 @@ blockquote > pre {
   text-indent: 0;
 }
 
+blockquote > code {
+  background-color: #fffef0;
+}
+
 pre,code {
   white-space:pre;
 }
@@ -246,6 +250,7 @@ pre {
 
 code {
   font-family: "Ubuntu Mono", "Courier New", Courier, monospace;
+  background-color: #ffefd3;
 }
 
 .code table {
@@ -292,4 +297,10 @@ a.ref:before {
 
 ol#footnotes {
   counter-reset:footnotecounter;
+}
+
+.score {
+  font-size: 125%;
+  font-weight: bold;
+  text-align: right;
 }

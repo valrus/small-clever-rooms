@@ -1,7 +1,7 @@
 ---
 layout: post.html
 title: Pi Day Curmudgeonliness
-tags: [pi_day, sjw]
+tags: [pi_day, sjw, math]
 summary: I'm a curmudgeon about Pi Day. But...
 ---
 
