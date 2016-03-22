@@ -172,3 +172,26 @@ So when I encountered game-breaking controller glitches,
 I was fed up enough to put the game down permanently.
 
 <div class="score">$3.</div>
+
+### *The Dungeoning*
+
+So I finished this game in maybe ten tries,
+which might be too easy for a roguelike.
+There is a New Game+,
+which I assume is the same thing, but harder,
+but by the time I hit it I was done.
+I put all my skill points into Strength,
+which increased both my damage *and* my HP,
+and at no point did I see a reason to do otherwise.
+
+Get yourself a decent ranged weapon and you'll have a good if boring time.
+Fail to do so, and even with very little skill
+you'll still have an OK time,
+as the game becomes a race between collecting healing items
+and takng damage.
+Or you could probably just avoid a lot of the enemies.
+I don't know. My first win came so easily,
+and the game is so generic in every respect,
+that I haven't bothered to try and doubt I ever will.
+
+<div class="score">$2.</div>
