@@ -111,58 +111,6 @@ a:hover
   text-align: center;
 }
 
-/* === Language menu === */
-
-#submenu
-{
-  float: left;
-  height: 31px;
-  width: 300px;
-  padding-left: 10px;
-  margin: 0;
-  list-style: none;
-
-}
-
-#submenu li
-{
-  float: left;
-  display: block;
-  width: 94px;  height: 31px;
-}
-
-#submenu a
-{
-  display: block;
-  width: 94px;  height: 31px;
-  background-color: inherit;
-  text-decoration: none;
-  line-height: 25px;
-  text-align: center;
-}
-
-#submenu a:link, #submenu a:visited
-{
-  color: #ffffff;
-}
-
-#submenu a:hover, #submenu a:active
-{
-  background-image: url('../images/tabb2.jpg');
-  color: #ffb332;
-}
-
-#submenuselected
-{
-  display: block;
-  width: 94px;  height: 31px;
-  background-image: url('../images/tabb.jpg');
-  text-decoration: none;
-  line-height: 25px;
-  color: #ffb332;
-  text-align: center;
-}
-
 /* === Other Divs === */
 
 .border
