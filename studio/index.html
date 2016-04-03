@@ -53,7 +53,9 @@
 
 {% set songs = [
   ("Newer Songs",
-    [("A Dead Man", None, True),
+    [("The Eternally Incomprehensible Thing", "1/2", False),
+     ("God Does Not Play Dice", "2/2", True),
+     ("A Dead Man", None, True),
      ("Where No One Has Gone Before", None, True),
      ("Headphones", None, True),
      ("The Ballad of Nate Phelps", None, True),
@@ -84,9 +86,9 @@
     {% for song_category, song_list in songs %}
       <h1>{{ song_category }}</h1>
       <ol>
-      {% for song, artist, lyric in song_list %}
+      {% for song, note, lyric in song_list %}
         <li><a href="#" class="music_play" data-src="{{ get_asset('music/%s.mp3')|format(song) }}">{{ song }}</a>
-          {% if artist %}({{ artist }}){% endif -%}
+          {% if note %}({{ note }}){% endif -%}
           <span class="music_icons">
             {% if lyric %}<a title="Lyrics" href="{{ get_url('studio/lyrics/%s.html')|format(song)|replace(' ', '-') }}">☰</a>&nbsp;{% endif -%}
             <a title="Download" href="{{ get_asset('music/%s.mp3')|format(song)|urlencode }}">⬇</a>
