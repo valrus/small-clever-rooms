@@ -1,8 +1,7 @@
 ---
 layout: post.html
-title: 
+title: Post Title
 tags: []
-summary: 
+summary: Post Summary
 ---
-
 
