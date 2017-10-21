@@ -15,7 +15,7 @@ The following shows some of the layers of abstraction involved in a plain text f
 
 <img class="right" src="{{ get_asset('images/posts/Unicode/encoding_layers.png') }}" />
 
-Starting at the bottom—the real nuts and bolts detail of how compurers store information<sup id="ref1"><a href="#foot1" class="ref"></a></sup>—each layer zooms out and brings us one step closer to something humans are used to looking at and extracting information from. This post will focus on the top two layers and the idea that an encoding is a relationship or translation between them.
+Starting at the bottom—the real nuts and bolts detail of how computers store information<sup id="ref1"><a href="#foot1" class="ref"></a></sup>—each layer zooms out and brings us one step closer to something humans are used to looking at and extracting information from. This post will focus on the top two layers and the idea that an encoding is a relationship or translation between them.
 
 ## The Content Of A File Is Numbers
 
@@ -29,9 +29,9 @@ An encoding describes how those bytes are translated into the next abstraction l
 
 ## ASCII is a (simple, naïve) encoding
 
-You have maybe heard of [ASCII](https://en.wikipedia.org/wiki/ASCII). It, like every other text encoding, is just a way of converting bytes into characters, or vice versa. It's "simple" in that it's a basic one-to-one correspondence between the numbers 0–127 and 128 specific characters: for example, the number 41 represents a capital A. (Other encodings are not so simple, but I'll get to some of them later.) You can see what numbers correspond to what characters using a tool like this [ASCII to decimal converter](http://www.stringfunction.com/ascii-decimal.html). If you don't want to do that, here's what the bytes of the word "text" look like when encoded using ASCII:
+You have maybe heard of [ASCII](https://en.wikipedia.org/wiki/ASCII). It, like every other text encoding, is just a way of converting bytes into characters, or vice versa. It's "simple" in that it's a basic one-to-one correspondence between the numbers 0–127 and 128 specific characters: for example, the number 41 represents a capital A. (Other encodings are not so simple, but I'll get to some of them later.) You can see what numbers correspond to what characters using a tool like this [ASCII to decimal converter](http://www.stringfunction.com/ascii-decimal.html). If you don't want to do that, here's what the bytes of the string "text." (including the period) look like when encoded using ASCII:
 
-<code>74 65 78 74</code>
+<code>74 65 78 74 46</code>
 
 But the tradeoff for that simplicity is that ASCII is naïve: because it only knows about 128 different characters, and almost half of those 128 characters are your basic Eurocentric Latin letters A–Z in upper and lower case, it's _impossible_ to accurately represent most text in almost any language other than English using ASCII. Even most other languages that use Latin script have accents that you have to throw away in order to get ASCII characters. For languages that don't use Latin script at all—Russian, Chinese, etc.—it's totally hopeless.
 
@@ -74,9 +74,9 @@ How does it do this? Well, one thing is for sure: as with CJK, one byte per char
 
 The most obvious way to encode Unicode code points (that is, turn them into bytes so that a computer can handle them) is just to take as many bytes per character as are required to get numbers up to 1,114,112. Every bit doubles the number of characters we can support, so at eight bits per byte, three bytes suffices with plenty of margin for error. But computers tend to do things in groups of powers of two; for [that and other reasons](http://stackoverflow.com/questions/10143836/why-is-there-no-utf-24), the most straightforward Unicode encoding, UTF-32, is a fixed-width encoding that uses four bytes per character. (UTF stands for Unicode Transformation Format; 32 refers to the number of bits used for each character.)
 
-Encoding in UTF-32 is as simple as using ASCII or a single-byte encoding. A character's UTF-32 value is just the bytes representing a number equal to its code point. That's nice because it's easy. It's less nice because it uses four bytes for _every character_, which is a pretty big waste of space. Here's what bytes are used to encode the word "text" in UTF-32, with underlines to group together the multiple bytes corresponding to each character:
+Encoding in UTF-32 is as simple as using ASCII or a single-byte encoding. A character's UTF-32 value is just the bytes representing a number equal to its code point. That's nice because it's easy. It's less nice because it uses four bytes for _every character_, which is a pretty big waste of space. Here's what bytes are used to encode the word "text." in UTF-32, with underlines to group together the multiple bytes corresponding to each character:
 
-<code><u>00 00 00 74</u> <u>00 00 00 65</u> <u>00 00 00 78</u> <u>00 00 00 74</u></code>
+<code><u>00 00 00 74</u> <u>00 00 00 65</u> <u>00 00 00 78</u> <u>00 00 00 74</u> <u>00 00 00 46</u></code>
 
 Compare that with the four bytes needed for ASCII way earlier in this essay. UTF-32 is almost the same thing, but with a bunch of extra zeroes which convey no useful information.<sup id="ref6"><a href="#foot6" class="ref"></a></sup>
 
