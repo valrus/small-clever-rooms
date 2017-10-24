@@ -44,6 +44,10 @@ analytics:
 # Color code blocks
 pygmentize: True
 
+# Hoep markdown extensions
+parser:
+    superscript: True
+
 # Containers
 containers:
     essays:

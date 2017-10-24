@@ -5,12 +5,12 @@
 
 {% block content %}
 <div class="text">
-{% for year, archive in posts.archives.iteritems() %}
+{% for year, archive in posts.archives.items() %}
   <li class="archive-year">
     <hr />
     <h1>{{ year }}</h1>
     <dl>
-    {% for month, posts in archive.months.iteritems() %}
+    {% for month, posts in archive.months.items() %}
       {% for post in posts %}
         <dt>{{ post.timestamp|date('%B %d') }}<br /><a href="{{ get_url(post.url) }}">{{ post.title }}</a></dt>
         <dd>{{ post.summary }}</dd>
