@@ -1,38 +1,35 @@
 #adjposts {
-  color:rgb(37, 58, 107);
-  margin-bottom: 1em;
-}
-
-#adjposts a {
-  color:#005AF2;
+    margin: 1em;
+    position: relative;
 }
 
 #prevpost, #nextpost {
-  display: inline-block;
-  width: 15.5em;
-  background: #FFFEF0;
-  /* Note: this works only because these are inline! */
-  vertical-align: middle;
+    display: inline-block;
+    width: 15.5em;
+    /* Note: this works only because these are inline! */
+    vertical-align: middle;
 }
 
 #prevpost {
-  text-align: left;
-  padding-left: 1em;
-  padding-right: 0.5em;
-  margin-right: 1em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    margin-right: 1em;
 }
 
 #nextpost {
-  text-align: right;
-  padding-right: 1em;
-  padding-left: 0.5em;
-  margin-left: 1em;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    margin-left: 1em;
 }
 
 #prevpost a {
-  margin-left: 0.5em;
+    margin-left: 0.5em;
 }
 
 #nextpost a {
-  margin-right: 0.5em;
+    margin-right: 0.5em;
 }

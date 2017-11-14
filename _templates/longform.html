@@ -5,30 +5,35 @@
 {{ super() }}
 <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css' />
 <link href='https://fonts.googleapis.com/css?family=Rosario:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
-<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
-<link rel="stylesheet" type="text/css" href="{{ get_asset('css/typography.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ get_asset('css/pygments.css') }}" />
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet"> 
+<!--  link rel="stylesheet" type="text/css" href="{{ get_asset('css/tufte-pandoc-css/pandoc.css') }}" /> -->
+<link rel="stylesheet" type="text/css" href="{{ get_asset('css/tufte-pandoc-css/pandoc-solarized.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ get_asset('css/tufte-pandoc-css/tufte-extra.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ get_asset('css/tufte-css/tufte.css') }}" />
 {% endblock head %}
 
 {% block body %}
-<div id="return"><a href="{% block returnlink %}{{ get_url('/study/') }}{% endblock %}"><img src="{{ get_asset('images/title-back.png') }}" /></a></div>
-<div id="column">
-    <div id="main">
-        <header>
-            <h1>{% block title %}{% endblock %}</h1>
-            <p class="subhead">{% block subtitle %}{% endblock %}</p>
-        </header>
-        {% block content %}
-        {% endblock content %}
-    </div>
-    <div id="footer">
+<article>
+    <p id="blog-p">
+        <span id="blogdesc" class="marginnote">
+            Back to
+            <a href="{% block returnlink %}{{ get_url('/study/') }}{% endblock %}">
+                <span class="newthought">Small Clever Rooms</span>
+            </a>
+        </span>
+    </p>
+    <h1>{% block title %}{% endblock %}</h1>
+    {% if item.subhead %}<subtitle>{% block subhead %}{% endblock %}</subtitle>{% endif %}
+    {% block content %}
+    {% endblock content %}
+    <div class="thefooter">
         {% block footer %}
         {% endblock footer %}
-        <div id="colophon">
+        <div class="colophon">
             {% block colophon %}
-            <p>Want to email me? My email is my first initial and last name at gmail.com. I'm also on <a href="https://twitter.com/valrus">Twitter</a> as @valrus (mostly defunct) and <a href="https://joinmastodon.org/">Mastodon</a> as <pre>@valrus@aleph.land</pre>.</p>
+            <p>Contact me? My email is my first initial and last name at gmail.com. I'm also on <a href="https://twitter.com/valrus">Twitter</a> as @valrus (mostly defunct) and <a href="https://joinmastodon.org/">Mastodon</a> as @valrus@aleph.land.</p>
             {% endblock colophon %}
         </div>
     </div>
-</div>
+</article>
 {% endblock body %}

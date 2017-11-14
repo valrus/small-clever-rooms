@@ -11,17 +11,17 @@ Making a module into a package is an easy way to make it possible to split it in
 
 First, create a directory named `parts` in the same location and two files named `Widget.py` and `Grommet.py` in it; move the source for each class into the corresponding file. Then create a text file in the `parts` directory named `__init__.py`. Edit `__init__.py` and add the following:
 
-~~~ { python }
+```python
 from Widget import Widget
 from Grommet import Grommet
-~~~
+```
 
 This makes `Widget` and `Grommet` accessible by using, e.g., `from parts import Widget` or
 
-~~~ { python }
+```python
 import parts
 parts.Widget
-~~~
+```
 
 just as when the two were both in the `parts.py` file.
 

@@ -21,39 +21,39 @@ Eventually I worked it out, though, so now that I've bounced back a little I thi
 
 Generating Fibonacci numbers comes probably just after Hello World and finding factorials in the Beginner Programming Problems Hall of Fame, and a straightforward recursive solution is easy in Haskell:
 
-~~~ { haskell }
+```haskell 
 fibo 0 = 0
 fibo 1 = 1
 fibo n = fibo (n - 1) + fibo (n - 2)
-~~~
+```
 
 But that solution won't memoize: if you ask it for `fibo 156` it calculates `fibo 0` through `fibo 155`, and then if you ask for `fibo 157` it calculates them all again on its way.
 
 I came across another solution that took me a little time to understand:
 
-~~~ {haskell}
+```haskell
 fibs ∷ [Integer]
 fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
 fibo ∷ Int → Integer
 fibo n = fibs !! n
-~~~
+```
 
 The first and retrospectively stupidest question I had was how this memoizes any better than the naive solution above, but that is obviously because `fibs` is an infinite list. Thanks to Haskell's lazy evaluation, it fills up only as far as we ask it to (using `fibo`) and stores everything preceding that. Okay.
 
 The definition of `fibs` puzzled me but not for too long: `zipwith` combines corresponding elements of two lists using the predicate that it takes as its first argument. So `fibs` seeds the list of Fibonacci numbers with the first two, then generates subsequent ones by summing corresponding elements of that list and itself sans its first element (`tail fibs`). To put it another way, you get subsequent entries in fibs by summing what you've got so far with the same shifted up by one. Sort of like this:
 
-~~~
+```plaintext
 fibs      0 1 1 2 3 5  8 
 tail fibs 1 1 2 3 5 8  13  etc...
 sum       1 2 3 5 8 13 21
-~~~
+```
 
 Anyway, that was fine. What was beautiful, once I had that, was the actual solution to the problem. It looked like this:
 
-~~~ {haskell}
+```haskell
 sum $ filter even (takeWhile (< 4000000) fibs)
-~~~
+```
 
 which is about as close as you can get to just restating the problem in code. Read function applications from right to left: take Fibonacci numbers while they're less than 40 million, filter out the even ones, and sum the result. It's beautiful. That's when my eyes turned into hearts.
 
@@ -66,9 +66,9 @@ Unfortunately, then there was [Problem 3](http://projecteuler.net/problem=3):
 
 I've done a whole bunch of Euler Project problems in Python, and I found it very helpful to build up a library of useful functions along the way. So I didn't just want to solve this problem; I wanted to use it as an opportunity to add a `factors` function, which would take an integer `n` and return a list of `n`'s prime factors, to my repertoire. After I did so, the solution to Problem 3 was a joke:
 
-~~~ {haskell}
+```haskell
 last $ Euler.factors 600851475143
-~~~
+```
 
 Coming up with `factors` was the part that gave me problems. Here's the basic approach that I used and to which my eventual success hewed pretty closely:
 
@@ -80,13 +80,13 @@ I'm sure this is far from optimal but I believe it's the approach I used in Pyth
 
 The most difficult thing about this problem actually turned out to be the √n part. Haskell has a built-in square root function for floating point numbers, of course, but unfortunately because of precision issues, just using it and then taking the floor of the result can [lead to wrong answers and overflow errors](http://www.haskell.org/haskellwiki/Generic_number_type#squareRoot) for large enough numbers. I'm making a repository of useful stuff, I want it to be better than that. So I went and swiped [some code based on Newton's Method](http://haskellsolutions.blogspot.com/2009/02/integer-square-root-of-positive-integer.html):
 
-~~~ {haskell}
+```haskell
 squareRoot ∷ Int → Int
 squareRoot n 
     | n ==  1              = 1 
     | otherwise            = div (k + ( div n k)) 2
 where k = squareRoot(n-1) 
-~~~
+```
 
 I implemented everything else and tried it. It worked okay, but when I ran `factors` on a six-digit number, it took probably ten to fifteen seconds. A back of the envelope calculation then yields about 200 days for the actual problem, assuming the runtime increased linearly, which it almost certainly would not have. Of course that didn't matter, because when I compiled and ran the same test instead of using GHCi, I got a stack overflow error.
 
@@ -98,7 +98,7 @@ Treachery! That innocuous-looking code I'd pilfered from the web was terrible! A
 
 I scrapped that code and wrote a stupid binary search my damn self, using not one but two accumulating parameters to make sure it was tail-recursive. Here's the result of my sweat and tears (no blood, I mean Jesus it's just computer programming):
 
-~~~ {haskell}
+```haskell
 squareRoot' ∷ Integer → Integer → (Integer, Integer) → Integer
 squareRoot' n g (min, max)
     | g^2 < n   = if (g + 1)^2 > n
@@ -108,7 +108,7 @@ squareRoot' n g (min, max)
     | otherwise = g
 
 squareRoot n = squareRoot' n (n `div` 2) (0, n)
-~~~
+```
 
 Needless to say, I'm not nearly as euphoric about this as I was about Problem 2. In fact I kind of hate this code. Accumulating parameters are gross and ugly and they make this function take way too many parameters.
 

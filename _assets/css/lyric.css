@@ -1,3 +1,7 @@
-.lyric {
+article {
   text-align: center;
+}
+
+#blogdesc, .thefooter{
+    text-align: left;
 }

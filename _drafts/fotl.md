@@ -19,7 +19,7 @@ the relentlessness of their snarling contempt
 was a little too much for my delicate constitution to sustain an interest in.
 But, ten years on, I'm rediscovering them.
 This is perfect music for the era of Donald Trump,
-who has given (or perhaps merely revealed to) us
+who has given (or perhaps merely revealed) to us
 a raucous, aggressive, ugly and crude world
 from which none of us can escape for long
 and in which almost all of what people get up to,

@@ -42,11 +42,11 @@ title: small clever rooms
 analytics:
 
 # Color code blocks
-pygmentize: True
+pygmentize: False
 
-# Hoep markdown extensions
-parser:
-    superscript: True
+# Parsers
+parsers:
+    md: tufte
 
 # Containers
 containers:

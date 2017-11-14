@@ -6,15 +6,11 @@
 {% endblock %}
 
 {% block title %}
-<div class="lyric">
 {{ item.title }}
-</div>
 {% endblock %}
 
 {% block content %}
-<div class="lyric">
 {{ super() }}
-</div>
 {% endblock %}
 
 {% block returnlink %}{{ get_url('/studio/') }}{% endblock %}

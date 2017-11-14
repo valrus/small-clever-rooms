@@ -42,8 +42,8 @@ body {
 }
 
 p {
-  font-weight:300;
-  margin: .8125em 0;
+    font-weight:300;
+    margin: .8125em 0;
 }
 
 body i {
@@ -82,11 +82,15 @@ p img.right {
   margin:.5em 0 .8125em .8125em;
 }
 
-h1, h2, h3, h4, h5, h6, p.subhead {
+h1, h2, h3, h4, h5, h6, div.subhead {
   font-family: "Bitter", "Palatino Linotype", "Georgia", serif;
   font-weight: normal;
   line-height: 1.15em;
   color: rgb(37, 58, 107);
+}
+
+div.subhead {
+    margin: 0 0 .8125em 0;
 }
 
 h1 {

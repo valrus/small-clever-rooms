@@ -10,7 +10,7 @@ a music album comes along that just consumes me for a little while.
 I want to read everything anyone's written about it
 to find out if it affected other people in the same way it did me
 and mine for insights and ways to put words to how it made me feel what I did.
-Mount Eerie's [*A Crow Looked at Me*](https://pwelverumandsun.bandcamp.com/album/a-crow-looked-at-me) is the latest such album.
+Mount Eerie's *[A Crow Looked at Me](https://pwelverumandsun.bandcamp.com/album/a-crow-looked-at-me)* is the latest such album.
 It's about the recent death of Phil Elverum's wife from pancreatic cancer,
 and it's not hard to figure out, in broad strokes, why it affected me so powerfully
 after only a couple listens.
@@ -21,7 +21,7 @@ after only a couple listens.
 I'm interested in trying to pick apart
 how this album is so effective,
 because it seems un-pick-apartable.
-You go to the album's Genius page<sup id="ref1"><a href="#foot1" class="ref"></a></sup>
+You go to the album's Genius page[^genius]
 and look at the lyrics for the first song, "[Real Death](https://genius.com/Mount-eerie-real-death-lyrics),"
 and tell me if you felt the need to click on any of those lyrics
 to have user annotations explain what they mean.
@@ -29,6 +29,11 @@ The lines that hit the hardest,
 like "Real Death" and the first verse of "[Swims](https://genius.com/Mount-eerie-swims-lyrics)",
 don't need any, like, exegesis.
 It's all right there in front of you.
+
+[^genius]:
+  Because even though Genius serves up two and a half megs of Javascript
+  to show you nine hundred bytes of text,
+  it's still the best place to find up-to-date lyrics, alas.
 
 But I don't think it's as simple as saying *A Crow Looked at Me*
 derives its power from being plainspoken about emotional devastation.
@@ -39,6 +44,8 @@ an unsubtle attempt to manipulate the listener's emotions
 and not worth listening to more than once.
 Why bother? There's nothing more to get out of the lyrics.
 It's all right there in front of you.
+
+### A Pine Cone, Your Squeaking Chair
 
 In case my own obvious ham-handedness in the last two paragraphs
 didn't make it clear,
@@ -55,7 +62,7 @@ From *Benji*'s "Pray for Newtown":
 > They went so young, who gave their lives  
 > To make us stop and think and try to get it right  
 > They went so young, a cloud so dark over them hung  
-> And they left home, gave their mom and dad a kiss and a hug  
+> And they left home, gave their mom and dad a kiss and a hug
 
 From *A Crow Looked at Me*'s "Toothbrush/Trash":
 
@@ -71,7 +78,7 @@ From *A Crow Looked at Me*'s "Toothbrush/Trash":
 > The actual experience of you here  
 > I can feel these memories escaping  
 > Colonized by photos narrowed down and told my mind erasing  
-> The echo of you in the house dies down  
+> The echo of you in the house dies down
 
 Looking at the difference between these two excerpts,
 I actually hate *Benji* a lot more than I did even the first time I listened to it.
@@ -87,7 +94,21 @@ Of course the kids gave their mom and dad a kiss and a hug before they left for 
 This means nothing. It's just clumsily pawing at my heartstrings.
 As my partner aptly put it when I was trying to talk through this post with her,
 it's like Mark Kozelek read the Wikipedia entry on the Newtown shooting
-and used the information therein to write a song.<sup id="ref2"><a href="#foot2" class="ref"></a></sup>
+and used the information therein to write a song.[^benji]
+
+[^benji]:
+  I'm sorry if you listened to *Benji* and loved it.
+  I didn't start this post intending to bag on it so hard,
+  and I know a lot of people thought it was great.
+  But to me it just seems like dime-store pathos
+  compared to the realness of the death in <em>A Crow Looked at Me.</em>
+  And I should be up front about one other factor:
+  from what I've read, Mark Kozelek seems like he personally is often a
+  [real](https://www.theguardian.com/music/2015/jun/04/i-interviewed-mark-kozelek-he-called-me-a-bitch-on-stage)
+  [asshole](http://www.stereogum.com/1709766/mark-kozelek-i-love-you-but-youre-bringing-me-down/),
+  where Phil Elverum seems like just the nicest and most gentle guy you can imagine.
+  I'm sure this skews my opinion of their artistic output as well,
+  so feel free to take it with as many grains of salt as you deem necessary.
 
 Contrast "Toothbrush/Trash," of whose lyrics my excerpt comprises about half.
 (The stanza I quoted from "Pray for Newtown" is one of nine.)
@@ -118,40 +139,6 @@ for these anecdotes not to have been selected and tweaked for maximum effect,
 rather than just plucked haphazardly out of a constant stream of such moments
 in Phil Elverum's life and dropped onto an album with no artifice whatsoever.
 
-Please. Please. I have to believe it's not always this bad.
-
-<hr />
-
-<ol>
-
-<li class="foot" id="foot1">
-<p>
-Because even though Genius serves up two and a half megs of Javascript
-to show you nine hundred bytes of text,
-it's still the best place to find up-to-date lyrics, alas.
-<a href="#ref1">↩</a></a>
-</p>
-</li>
-
-<li class="foot" id="foot2">
-<p>
-I'm sorry if you listened to <em>Benji</em> and loved it.
-I didn't start this post intending to bag on it so hard,
-and I know a lot of people thought it was great.
-But to me it just seems like dime-store pathos
-compared to the realness of the death in <em>A Crow Looked at Me.</em>
-</p>
-
-<p>
-And I should be up front about one other factor:
-from what I've read, Mark Kozelek seems like he personally is often a
-<a href="https://www.theguardian.com/music/2015/jun/04/i-interviewed-mark-kozelek-he-called-me-a-bitch-on-stage">real</a>
-<a href="http://www.stereogum.com/1709766/mark-kozelek-i-love-you-but-youre-bringing-me-down/">asshole</a>,
-where Phil Elverum seems like just the nicest and most gentle guy you can imagine.
-I'm sure this skews my opinion of their artistic output as well,
-so feel free to take it with as many grains of salt as you deem necessary.
-<a href="#ref2">↩</a></a>
-</p>
-</li>
-
-</ol>
+Please. Please.
+Someday this or something like it will happen to me.
+I have to believe it's not always this bad.
