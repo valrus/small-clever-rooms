@@ -5,7 +5,7 @@ tags: [music, scott_walker, bish_bosch]
 summary: A look back at Scott Walker's most recent solo album, about four years later.
 ---
 
-My [Favorite Albums of 2012](http://ianmccowan.nfshost.com/writing/music/music2012.shtml) list omitted what was probably one of my most anticipated albums of the year.
+My [Favorite Albums of 2012]({{ get_url('containers/music/music2012') }}) list omitted what was probably one of my most anticipated albums of the year.
 In fact, it didn't make that list.
 The reason is not that it disappointed me---though in a way it did---but because even if it hadn't
 it definitely would not be an album I'd want to return to often.

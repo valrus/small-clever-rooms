@@ -10,6 +10,25 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 <script src="{{ get_asset('js/audiojs/audio.min.js') }}"></script>
 <script>
+    /**
+    * JavaScript Get URL Parameter
+    * 
+    * @param String prop The specific URL parameter you want to retreive the value for
+    * @return String|Object If prop is provided a string value is returned, otherwise an object of all properties is returned
+    */
+    function getUrlParams(prop) {
+        var params = {};
+        var search = decodeURIComponent(window.location.href.slice(window.location.href.indexOf('?') + 1));
+        var definitions = search.split('&');
+
+        definitions.forEach(function(val, key){
+            var parts = val.split('=', 2);
+            params[parts[0]] = parts[1];
+        });
+
+        return params[prop];
+    };
+
   $(function() {
     // Get the css; remove newlines so we can include it inline
     // {css: '<!--#exec cmd="cat style/audio.css | tr -d '\n'"-->'}
@@ -17,9 +36,16 @@
 
     // Load in the first track
     var audio = a[0];
-        first = $('ol a').attr('data-src');
-    $('.music_play').first().parent().addClass('playing');
-    audio.load(first);
+    var selectedName = getUrlParams('song');
+    var $trackLink;
+    if (selectedName === undefined) {
+        $trackLink = $('.music_play').first();
+    } else {
+        $trackLink = $(".music_play[title='" + selectedName + "']");
+    }
+    var audioSrc = $trackLink.attr('data-src');
+    $trackLink.parent().addClass('playing');
+    audio.load(audioSrc);
 
     // Load in a track on click
     $('.music_play').click(function(e) {
@@ -29,6 +55,7 @@
       audio.load($(this).attr('data-src'));
       audio.play();
     });
+
     // Keyboard shortcuts
     $(document).keydown(function(e) {
       var unicode = e.charCode ? e.charCode : e.keyCode;
@@ -53,7 +80,8 @@
 
 {% set songs = [
   ("Newer Songs",
-    [("So Much for the Tolerant Left", None, True),
+    [("The Ice World", None, True),
+     ("So Much for the Tolerant Left", None, True),
      ("The Eternally Incomprehensible Thing", "1/2", False),
      ("God Does Not Play Dice", "2/2", True),
      ("A Dead Man", None, True),
@@ -90,7 +118,7 @@
       <h1>{{ song_category }}</h1>
       <ol>
       {% for song, note, lyric in song_list %}
-        <li><a href="#" class="music_play" data-src="{{ get_asset('music/%s.mp3')|format(song) }}">{{ song }}</a>
+        <li><a href="#" class="music_play" title="{{ song }}" data-src="{{ get_asset('music/%s.mp3')|format(song) }}">{{ song }}</a>
           {% if note %}({{ note }}){% endif -%}
           <span class="music_icons">
             {% if lyric %}<a title="Lyrics" href="{{ get_url('studio/lyrics/%s.html')|format(song)|replace(' ', '-') }}">☰</a>&nbsp;{% endif -%}

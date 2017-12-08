@@ -16,10 +16,12 @@
 <article>
     <p id="blog-p">
         <span id="blogdesc" class="marginnote">
+            {% block blogdesc %}
             Back to
             <a href="{% block returnlink %}{{ get_url('/study/') }}{% endblock %}">
                 <span class="newthought">Small Clever Rooms</span>
             </a>
+            {% endblock blogdesc %}
         </span>
     </p>
     <h1>{% block title %}{% endblock %}</h1>

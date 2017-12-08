@@ -8,6 +8,12 @@
 <link rel="stylesheet" type="text/css" href="{{ get_asset('css/blogpost.css') }}" />
 {% endblock %}
 
+{% block blogdesc %}
+{{ super() }}
+<br />
+<a class="sidebar-item" href="{{ get_url('feed.xml') }}">RSS Feed</a>
+{% endblock %}
+
 {% block footer -%}
       <div id="adjposts">
         <div id="prevpost">{% if older %}←<a href="{{ get_url(older.url) }}">{{ older.title }}</a>{% endif %}</div><!--
