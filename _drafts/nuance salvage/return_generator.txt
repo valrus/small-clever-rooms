@@ -1,0 +1,17 @@
+I like to try to use generator expressions to get a sort of "lazy evaluation" of iterables and avoid storing them in memory as much as possible. But there is a problem I've run into a couple times while trying to create a generator expression from the contents of a file. This function doesn't work, complaining about an I/O operation on a closed file when you call it:
+
+
+def get_split_lines(file_name):
+    with open(file_name, 'r') as f:
+        return (line.split() for line in f)
+
+
+The problem, I think, is the "lazy evaluation" causes the contents of the generator expression not to be evaluated until you try to iterate over it, which is outside the with clause and thus after the file has been closed.
+
+The solution is to turn your entire function into a generator using yield rather than returning a generator expression. This function does what was intended with the above:
+
+
+def get_split_lines(file_name):
+    with open(file_name, 'r') as f:
+        for line in f:
+            yield line.split()

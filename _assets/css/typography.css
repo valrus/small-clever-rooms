@@ -63,14 +63,6 @@ img {
     max-width: 95%;
 }
 
-.fullwidth {
-    display: block;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-}
-
 p img {
   float:left;
   margin:.5em .8125em .8125em 0;
@@ -271,12 +263,6 @@ code {
   width: 1.5em;
   display: inline-block;
   white-space: nowrap;
-}
-
-.albumcover {
-  width: 25%;
-  float: right;
-  margin: 1em;
 }
 
 /* Footnotes */

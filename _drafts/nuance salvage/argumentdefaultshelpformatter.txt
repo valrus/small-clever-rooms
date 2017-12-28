@@ -1,0 +1,33 @@
+This American Thanksgiving, I'm thankful for argparse.ArgumentDefaultsHelpFormatter.
+
+It's a handy little feature unobtrusively (and somewhat obscurely) tucked into the argparse documentation. If your command line argument parser setup is festooned with lines like
+
+    parser.add_argument("--encodingOut", dest="encodingOut", default="utf8",  
+                        help="Encoding of the output n-gram file with counts. Default=%(default)s")  
+
+with that last "Default=%default" in the help string for every single option that you add, you can instead initialize your ArgumentParser like:
+
+    parser = argparse.ArgumentParser(  
+        description=__doc__,  
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter  
+    )  
+
+and have the defaults automagically added to all the help strings. (You do, of course, use a docstring for your Python scripts that can be pulled into the command-line description using description=__doc__.)
+
+ 
+
+If you're stuck using Python 2.6, you can do this yourself. Just pass your already-set-up optparse.OptionParser to the following, which will modify it in place:
+
+    def addDefaultsToParserHelp(parser):  
+        """Add option defaults to every help string in an OptionParser. 
+        """  
+        for option in parser.option_list:  
+            if option.default is not None:  
+                option.help += (" " if option.help else "") + "[default: %default]"  
+
+ 
+
+Happy Thanksgiving, if you celebrate it! If not, well, you don't need a holiday to enjoy argparse.ArgumentDefaultsHelpFormatter.
+
+
+There's also docopt, of course, but installing a third-party module just for command line parsing is typical American extravagance.

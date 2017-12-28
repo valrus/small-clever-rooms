@@ -1,0 +1,23 @@
+Why does my doctest fail with this message?
+
+
+    Failed example:  
+         turkishToLower("TeStInG")  
+    Expected:  
+         u'test\u0131ng'  
+    Got:  
+         u'test\u0131ng'  
+
+Answer:
+
+The two strings look the same, but they're not. The "Expected" string literally contains the escape sequence "\u0131", whereas the "Got" string actually contains the Unicode character with code point 0131 but is just displayed with the escape sequence to avoid breaking consoles that don't support non-ASCII.
+
+
+Doctests compare against the string written to stdout in an interactive Python session, which is why the "Expected" string has an escape sequence. If I had instead tested the statement
+
+print(turkishToLower("TeStInG"))
+
+...well, it would have raised an exception or printed gibberish, because I'm on Windows where the console is too stupid to handle UTF-8 correctly without special treatment. But it would have TRIED to print the string with the actual Unicode character, and if it succeeded, I believe the test would have passed.
+
+
+In the end, to avoid depending on a console having a single brain cell, I escaped the backslash in the expected output in my doctest. That caused the "Got" string to have the escape sequence instead of a Unicode character and as a result the test passed. Another option would have been prefixing the entire docstring with an r, to make it a raw string (which amounts to the same thing).

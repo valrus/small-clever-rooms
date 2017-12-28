@@ -1,0 +1,35 @@
+It seems to be pretty generally agreed that coding standards are a good idea. Even if you don't have any really ironclad reasons to prefer, say, K&R-style (a.k.a. "Egyptian-style") braces or uncuddled elses to other formatting styles, there's a case to be made that just having a standard allows you to
+
+    stop wasting brain waves debating with yourself how to format things, and
+    more easily read your co-workers' code by making it look like your own.
+ 
+
+But, in the vein of my previous post on Evidence-Based Software Development, what if there were empirically valid reasons to prefer one coding style over another? A year-old, very short and readable paper (link goes to a PDF) attempted to find some such reasons. I thought the results were mixed, there aren't really any slam dunks, and they didn't do a stellar job of controlling for factors other than the ones they were attempting to analyze. But considering the paucity of evidence supporting what are considered "best practices" in computer science, we have to take what we can get. A bit of summary:
+
+    A version of a program with some logic extracted into a function resulted in lower comprehension scores than the version with that logic inline in two different places. But (and this is acknowledged in the paper) there is an unrelated misleading step that tripped at least one participant up. The authors propose what I suggest is the real takeaway from this trial: "later computations should follow from earlier ones."
+    Two blank lines separating statements inside a loop led participants to incorrectly assume that the latter statement was outside the loop. Lesson: don't put blank lines in the middle of logical blocks.
+    Evaluation of programs testing the effect of initializing variables to 1 or 0 depending on whether they were to be multiplied or added was confounded by the cognitive load of having to compute 4! in the "good" case.
+    Using functions in an order other than that in which they're defined makes comprehension harder, though this is mitigated by experience.
+    Using an overloaded operator ( + ) in two different contexts (int and string) near each other slowed down experienced programmers more than novices.
+ 
+
+And here's an example of why I'm occasionally skeptical about the authors' claims about why the results came out the way they did. They found that participants were better at respecting order of operations in the following code, with whitespace added to make the mathematical operators line up vertically:
+
+    y_base  = slope * x_base  + intercept  
+    y_other = slope * x_other + intercept  
+    y_end   = slope * x_end   + intercept  
+
+than in the single-spaced "zig-zag" equivalent:
+
+    y_base = slope * x_base + intercept  
+    y_other = slope * x_other + intercept  
+    y_end = slope * x_end + intercept  
+
+But is that because of the operators lining up, or because the extra spaces in the first version seem to cause the multiplicands to be grouped more closely than the addends? How would it work if it looked like this instead?
+
+    y_base  = slope_base  * x + intercept  
+    y_other = slope_other * x + intercept  
+    y_end   = slope_end   * x + intercept  
+
+
+Anyway. I wasn't thrilled with the methodology in this paper, but still: More of this, please. Let's have some evidence-based reasons for doing the things we do.

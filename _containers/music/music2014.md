@@ -5,7 +5,9 @@ title: Albums I Listened To in 2014
 
 ## Five Albums I Loved, In Roughly Chronological (for me) Order
 
-### Owen Pallett, *In Conflict*. [▶](http://alpentine.com/discography/in-conflict) <a href="{{ get_asset('images/covers2014/In Conflict.jpg')|urlencode }}" title="In Conflict album cover"rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/In Conflict.jpg')|urlencode }}" title="In Conflict album cover" /></a>
+### Owen Pallett, *In Conflict*. [▶](http://alpentine.com/discography/in-conflict)
+
+<a href="{{ get_asset('images/covers2014/In Conflict.jpg')|urlencode }}" title="In Conflict album cover"rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/In Conflict.jpg')|urlencode }}" title="In Conflict album cover" /></a>
 
 ["In Conflict"](https://www.youtube.com/watch?v=hoDlU9A6y50). ["The Riverbed"](https://www.youtube.com/watch?v=gt8wR8CagQo). ["On a Path"](https://www.youtube.com/watch?v=HMr51844ybw).
 
@@ -17,7 +19,9 @@ Speaking of the lyrics: Pallett got some buzz in 2014 for a [series](http://www.
 
 I don't have any moments that I'd call standouts from this album because the whole thing's so consistently solid. It's affecting, playful, catchy work from a musician at the top of his game, and the quality also makes it [delightful](http://noisey.vice.com/en_ca/blog/owen-pallett-interview-in-conflict) how [voluble](http://www.npr.org/2014/05/27/314880990/owen-pallett-the-consummate-musician-in-conflict) he is about his creative process and motivating themes. Like its predecessor *Heartland*, *In Conflict* is an album that can grab you immediately and work as background music but also reward any closer inspection you care to undertake.
 
-### Swans, *To Be Kind*. [▶](http://younggodrecords.com/products/to-be-kind) <a href="{{ get_asset('images/covers2014/To Be Kind.jpg')|urlencode }}" title="To Be Kind album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/To Be Kind.jpg')|urlencode }}" title="To Be Kind album cover"/></a>
+### Swans, *To Be Kind*. [▶](http://younggodrecords.com/products/to-be-kind)
+
+<a href="{{ get_asset('images/covers2014/To Be Kind.jpg')|urlencode }}" title="To Be Kind album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/To Be Kind.jpg')|urlencode }}" title="To Be Kind album cover"/></a>
 
 ["Oxygen"](https://www.youtube.com/watch?v=1jSdTBGhDSg). ["A Little God In My Hands"](https://www.youtube.com/watch?v=I2bMsYb9P-k).
 
@@ -29,7 +33,9 @@ This album has few of the characteristics that usually define my year-end favori
 
 After being underwhelmed by Swans's (superficially quite similar) last effort *The Seer*, I was really surprised at how much I liked *To Be Kind* and how often I still manage to make time to listen to it front to back. It's not the kind of album you cherry pick songs from (with the possible exception of the blistering "Oxygen" or the blaring single "A Little God in My Hands"). It demands a commitment and your full attention but it earns both in spades: when the final onslaught of the title track subsides I feel raw, hypersensitive, scrubbed clean as if by purifying fire.
 
-### Jenny Hval and Susanna, *Meshes of Voice*. [▶](http://susannasonata.com/index.php?view=shop&product=6) <a href="{{ get_asset('images/covers2014/Meshes of Voice.jpg')|urlencode }}" title="Meshes of Voice album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/Meshes of Voice.jpg')|urlencode }}" title="Meshes of Voice album cover" /></a>
+### Jenny Hval and Susanna, *Meshes of Voice*. [▶](http://susannasonata.com/index.php?view=shop&product=6)
+
+<a href="{{ get_asset('images/covers2014/Meshes of Voice.jpg')|urlencode }}" title="Meshes of Voice album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/Meshes of Voice.jpg')|urlencode }}" title="Meshes of Voice album cover" /></a>
 
 ["Black Lake"](https://www.youtube.com/watch?v=FaZo5QK0R4A). ["O Sun O Medusa // A Mirror In My Mouth"](https://www.youtube.com/watch?v=HfjOWQ3grw0). [Medley (live)](https://www.youtube.com/watch?v=wndJzMYPGFk)
 
@@ -41,7 +47,9 @@ Conventional descriptions of this album's sound don't seem to do it justice. Som
 
 But the real appeal of this album for me is that it seems full of mysteries—mirrors and depths, skin and bones, water and milk—but reveals a little more of itself every time I listen. It's lovely to skim along its surface and peer into its black depths, but there's enough lake there to submerge myself completely and never reach the bottom.
 
-### Zammuto, *Anchor*. [▶](http://www.zammutosound.com/digital-store) <a href="{{ get_asset('images/covers2014/Anchor.jpg')|urlencode }}" title="Anchor album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/Anchor.jpg')|urlencode }}" title="Anchor album cover" /></a>
+### Zammuto, *Anchor*. [▶](http://www.zammutosound.com/digital-store)
+
+<a href="{{ get_asset('images/covers2014/Anchor.jpg')|urlencode }}" title="Anchor album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/Anchor.jpg')|urlencode }}" title="Anchor album cover" /></a>
 
 ["Great Equator"](https://www.youtube.com/watch?v=O4hbMkcatAY). ["IO"](https://www.youtube.com/watch?v=ETMhibbH2bA).
 
@@ -51,7 +59,9 @@ This album is a sonic delight, and the links in this paragraph will take you to 
 
 I think my only quibble with this album is that "[Stop Counting](http://zammutosound.tumblr.com/post/100670892145/track-9-stop-counting)" drags a little bit for me, but that's not enough to keep it from being one of my favorites this year. It's gorgeous, enigmatic but not unapproachable, and it packs a great deal of fun and sonic inventiveness into a tidy 40 minutes.
 
-### Adult Jazz, *Gist Is*. [▶](http://adultjazz.bandcamp.com/album/gist-is) <a href="{{ get_asset('images/covers2014/Gist Is.jpg')|urlencode }}" title="Gist Is album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/Gist Is.jpg')|urlencode }}" title="Gist Is album cover" /></a>
+### Adult Jazz, *Gist Is*. [▶](http://adultjazz.bandcamp.com/album/gist-is)
+
+<a href="{{ get_asset('images/covers2014/Gist Is.jpg')|urlencode }}" title="Gist Is album cover" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2014/Gist Is.jpg')|urlencode }}" title="Gist Is album cover" /></a>
 
 ["Hum"](https://www.youtube.com/watch?v=3_AIF9NstTk). ["Am Gone"](https://www.youtube.com/watch?v=P2rPHqj-9ss).
 

@@ -1,0 +1,89 @@
+The Problem
+
+Different Python builds prior to 3.3 and including all of Python 2 handle Unicode differently. So-called "wide" Python builds store Unicode strings internally as UTF-32, so any Unicode character can be stored as a single 4-byte unit. "Narrow" builds, on the other hand, store Unicode as UTF-16. This has the unfortunate side effect that any Unicode character not in Unicode's Basic Multilingual Plane (i.e. having code point > U+FFFF) is stored as 2 characters (known as a surrogate pair) instead of 1. Example time!
+ 
+
+Wide Python build:
+
+    In [1]: us = u'\U0001f603'  
+      
+    In [2]: for c in us:  
+       ...:     print(repr(c))  
+       ...:   
+    u'\U0001f603'  
+ 
+
+Narrow Python build:
+
+    In [1]: us = u'\U0001f603'  
+      
+    In [2]: for c in us:  
+      ....:     print repr(c)  
+      ....:  
+    u'\ud83d'  
+    u'\ude03'  
+
+
+Note: Python 2 (both 2.6 and 2.7) on the Grid is wide. Most other Python 2 builds, in my experience, default to narrow, especially on Windows.
+
+
+If you have a narrow Python build, there is no way to circumvent this behavior within Python itself. A non-BMP "character" must be 2 characters long, and if you want to iterate over a string containing such characters, it's up to you to determine which of them should actually be surrogate pairs. This basically means reimplementing a UTF-16 decoding algorithm.
+
+ 
+## A Shorter Way
+
+I figured out a way to convert a Python Unicode string to a list of pseudo-characters, where a pseudo-character is either a single character or a surrogate pair (i.e. a string of length 2) for non-BMP characters on a narrow Python build. The method uses one list comprehension and one recipe from the Python itertools documentation.
+
+ 
+
+An outline of the approach:
+
+    Encode the string as UTF-32LE. (The LE is for little-endian, but it doesn't matter here; it would work with BE as well. You just need to use one or the other so Python doesn't add a BOM.)
+    A string encoded as UTF-32 is a stream of bytes; every 4 bytes represents a character. Split up the UTF-32 encoded string into 4-byte chunks.
+    Decode each chunk from UTF-32LE. On wide Python builds, this will unconditionally give you a single character. On narrow builds, it will give you one character or a surrogate pair.
+
+ 
+The Code
+
+    import itertools  
+      
+    def grouper(iterable, n, fillvalue=None):  
+        """Collect data into fixed-length chunks or blocks. 
+     
+        From https://docs.python.org/2/library/itertools.html#recipes 
+        """  
+        # grouper('ABCDEFG', 3, 'x') --> ABC DEF Gxx  
+        args = [iter(iterable)] * n  
+        return itertools.izip_longest(fillvalue=fillvalue, *args)  
+      
+      
+    def getUTF16Chars(s):  
+        """Get a list of UTF-16 representations of the chars in a word. 
+     
+        In particular, surrogate pairs will be kept together for chars outside the BMP. 
+     
+        Logic: encode the string to UTF-32, split it to 4-byte chunks, then decode each chunk. 
+        Because each 4-byte chunk represents a single character in utf32, decoding non-BMP chars will 
+        produce utf-16 surrogate pairs on narrow Python builds and single unicode chars on wide builds. 
+        """  
+        return [b''.join(u32bytes).decode('utf-32le') for u32bytes in grouper(s.encode('utf-32le'), 4)]  
+
+ 
+
+Demonstration, using a narrow Python build:
+
+    In [2]: us = u'\U0001f603'  
+      
+    In [3]: for c in us:  
+                print repr(c)  
+       ....  
+    u'\ud83d'  
+    u'\ude03'  
+      
+    In [4]: for c in getUTF16Chars(us):  
+       ...:     print repr(c), len(c)  
+       ...:  
+    u'\U0001f603' 2  
+
+
+(Note that even though narrow Python stores non-BMP characters as surrogate pairs and gives you the pieces of the surrogate pairs when you iterate over them, it still displays them as single Unicode characters. Deceptive!)

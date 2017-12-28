@@ -9,7 +9,9 @@ I listened to a *ton* of new music this year. In previous years I barely had eno
 
 # The Top 10
 
-## 10. The Uncluded, *Hokey Fright*. <a href="{{ get_asset('images/covers2013/Hokey Fright.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Hokey Fright.jpg')|urlencode }}" /></a>
+## 10. The Uncluded, *Hokey Fright*.
+
+<a href="{{ get_asset('images/covers2013/Hokey Fright.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Hokey Fright.jpg')|urlencode }}" /></a>
 
 ["Earthquake"](http://www.youtube.com/watch?v=ouK6yyN8sqI). ["The Aquarium"](http://www.youtube.com/watch?v=hoXlhYyr5XY). ["Organs"](http://www.youtube.com/watch?v=jxOd1MUOxQU).
 
@@ -23,7 +25,9 @@ The end result is an album with two very distinct voices that's far greater for 
 
 <small>I wrote a [more in-depth review](http://www.sputnikmusic.com/review/59460/The-Uncluded-Hokey-Fright/) of this album for Sputnik Music. That review is more of a defense against what I felt was an unfair previous review. Maybe it would be interesting too?</small>
 
-## 9. Cakes Da Killa, *The Eulogy*. <a href="{{ get_asset('images/covers2013/The Eulogy.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/The Eulogy.jpg')|urlencode }}" /></a>
+## 9. Cakes Da Killa, *The Eulogy*.
+
+<a href="{{ get_asset('images/covers2013/The Eulogy.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/The Eulogy.jpg')|urlencode }}" /></a>
 
 It's a free mixtape. [Go get it](http://mishkanyc.bandcamp.com/album/the-eulogy). 
 
@@ -33,7 +37,9 @@ Well, they could try it Cakes Da Killa's way and write rap songs about getting f
 
 *The Eulogy* might challenge your conception of yourself as an accepting, open-minded individual. It's the flip side to every safe, desexualized media depiction of gay people who never kiss or make out: starting with its audacious, outrageous first line, it gives us a queer view of the sexually aggressive braggadocio of other rap music and, if it makes the straight listener feel weird where the hetero variety of rap doesn't, it makes us question why that's so. Or, at least, it does those things if you want to think about it. If not, let's just say it bangs hard for a half hour straight and leave it at that.
 
-## 8. Waxahatchee, *Cerulean Salt*. <a href="{{ get_asset('images/covers2013/Cerulean Salt.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Cerulean Salt.jpg')|urlencode }}" /></a>
+## 8. Waxahatchee, *Cerulean Salt*.
+
+<a href="{{ get_asset('images/covers2013/Cerulean Salt.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Cerulean Salt.jpg')|urlencode }}" /></a>
 
 ["Swan Dive"](http://www.youtube.com/watch?v=sQusUE8y3SA). ["Misery Over Dispute"](http://www.youtube.com/watch?v=ykjkZaL9RLk).
 
@@ -43,7 +49,9 @@ So mea culpa for this: I didn't rue the absence of a new Mountain Goats album th
 
 Ultimately, then, while for me the Mountain Goats cast a long shadow over anyone who remotely resembles them, *Cerulean Salt* is its own beast: a devastating but lyrically economical jewel of an album and one that'll have me avidly keeping an eye out for whatever Katie Crutchfield gets up to next.
 
-## 7. These New Puritans, *Field of Reeds*. <a href="{{ get_asset('images/covers2013/Field of Reeds.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Field of Reeds.jpg')|urlencode }}" /></a>
+## 7. These New Puritans, *Field of Reeds*.
+
+<a href="{{ get_asset('images/covers2013/Field of Reeds.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Field of Reeds.jpg')|urlencode }}" /></a>
 
 ["Fragment 2"](http://www.youtube.com/watch?v=ftvICVWLBKY). ["V (Island Song)"](http://www.youtube.com/watch?v=4iSgJggVpNg). ["Organ Eternal"](http://www.youtube.com/watch?v=0sJZcyQsdUM). 
 
@@ -53,7 +61,9 @@ Evocative.
 
 There's a lot of musical machinery under the hood of this album: a children's choir, heavy orchestration, the man with the deepest voice in England. But it never feels excessive or like showing off; indeed, despite all the different parts and the complicated, sometimes dissonant harmonies that pop up everywhere, this album sounds downright economical, even sparse. And I demur on trying to investigate its lyrics here. Even if I could do so in a sensible way, their end result, to me, is the same as that of the music. This album takes me to a place when I listen to it in a way that no other album on this list does. 
 
-## 6. Chance the Rapper, *Acid Rap*. <a href="{{ get_asset('images/covers2013/Acid Rap.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Acid Rap.jpg')|urlencode }}" /></a>
+## 6. Chance the Rapper, *Acid Rap*.
+
+<a href="{{ get_asset('images/covers2013/Acid Rap.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Acid Rap.jpg')|urlencode }}" /></a>
 
 It's a free mixtape. Just [download the whole damn thing](http://www.datpiff.com/Chance-The-Rapper-Acid-Rap-mixtape.483826.html). 
 
@@ -63,7 +73,9 @@ It seems possible to me that someone could hate Chance's rap voice, of which Jen
 
 So Chance is in his own lane on the basis of his voice alone, but he was also 20 when he released *Acid Rap*. His lyrics reflect that immaturity (which is why I'm willing to excuse, for now, his use of "f****t" on "Favorite Song") but blend it with thoughtfulness in equal measure. "Pusha Man" (linked from "ad-lib" above) and its "hidden" track "Paranoia" maybe throw these two aspects of Chance into sharpest relief: the former a free-wheeling boast-fest about drugs and sex and the latter practically a meditation on seasonal violence in his hometown of Chicago. But then there's also "Cocoa Butter Kisses", where Chance laments how his drug use keeps his family members from wanting to hug him, induces his two guests to do the same, and I can think of no better word for it than "charming". The same applies to his heartfelt shout in the chorus of "Chain Smoker" of "This part, this part right here right now, this part my shit!" which you can't but agree with.
 
-## 5. Vampire Weekend, *Modern Vampires of the City*. <a href="{{ get_asset('images/covers2013/Modern Vampires of the City.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Modern Vampires of the City.jpg')|urlencode }}" /></a>
+## 5. Vampire Weekend, *Modern Vampires of the City*.
+
+<a href="{{ get_asset('images/covers2013/Modern Vampires of the City.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Modern Vampires of the City.jpg')|urlencode }}" /></a>
 
 ["Diane Young"](http://www.youtube.com/watch?v=oG6lTQNW04I). ["Ya Hey"](http://www.youtube.com/watch?v=i-BznQE6B8U). ["Step"](http://www.youtube.com/watch?v=_mDxcDjg9P4).
 
@@ -73,7 +85,9 @@ This is the first Vampire Weekend that doesn't feel somehow like it's trying too
 
 A [friend of mine](http://jeffhume.ca/) with whom I like to talk music said he sort of wished this album ended with "Ya Hey", which is indeed almost a perfect closing track. But there's a charm, too, in following it up with the  dirge of "Hudson", which finally makes musically explicit some of the morose lyrics sprinkled throughout *Modern Vampires*, and ending with the conciliatory throwaway "Young Lion". It feels risky, like Vampire Weekend putting album-wide themes over traditional considerations of sequencing. And I think this band is in a position where I appreciate it when they're willing to take a risk.
 
-## 4. Run the Jewels, *Run the Jewels*. <a href="{{ get_asset('images/covers2013/Run the Jewels.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Run the Jewels.jpg')|urlencode }}" /></a>
+## 4. Run the Jewels, *Run the Jewels*.
+
+<a href="{{ get_asset('images/covers2013/Run the Jewels.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Run the Jewels.jpg')|urlencode }}" /></a>
 
 ["A Christmas Fucking Miracle"](http://www.youtube.com/watch?v=OQ5rI461KNE). It's also a free mixtape. Download [the Whole Fucking Album](http://www.foolsgoldrecs.com/runthejewels/). 
 
@@ -81,7 +95,9 @@ It's been a good year for short albums, or maybe my attention span is just getti
 
 That last song is as close as these two ever get to anything resembling optimism, El-P with his relentless nihilism, Killer Mike with his boundless rage, the pair with their inexhaustible lyrics and indisputable chemistry trading bars about how fucked the world is and how many skulls they're gonna have to crack on their crazy ride through it. It's a lot, it turns out. This is an album that takes a very narrow lode of lyrical expression and mines it for all it's worth: El-P wallows in how this fucked world unmoors him and indulges his self-destructiveness in "Sea Legs", Killer Mike pops some shrooms and goes on a vision quest with a stripper in "No Come Down", and the two do a little pep talking on "A Christmas Fucking Miracle", but these are just sideshows. The bulk of *Run the Jewels* is Mike and El convincingly proclaiming their intent to destroy all lesser MCs—which is to say, all other MCs—and basically burn shit down and salt the earth. The album is short because it needs to be, because annihilation doesn't take long if you do it right. These two make quick work of it.
 
-## 3. Okkervil River, *The Silver Gymnasium*. <a href="{{ get_asset('images/covers2013/The Silver Gymnasium.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/The Silver Gymnasium.jpg')|urlencode }}" /></a>
+## 3. Okkervil River, *The Silver Gymnasium*.
+
+<a href="{{ get_asset('images/covers2013/The Silver Gymnasium.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/The Silver Gymnasium.jpg')|urlencode }}" /></a>
 
 ["It Was My Season"](http://www.youtube.com/watch?v=PjLP1n3h7Vc). ["Down Down the Deep River" (live)](http://www.youtube.com/watch?v=9s6Z3TVP4pk). ["Stay Young"](http://www.youtube.com/watch?v=n7UeGBULQ7Y). 
 
@@ -93,7 +109,9 @@ That's the line on which "Down Down the Deep River"—the third song on *Gymnasi
 
 The whole thing seems to be the first album to really deliver on Will Sheff's sharp turn into self-reflexive, sometimes self-critical pontification about rock music on Okkervil River's last three albums, like that reflection enabled him to dive into his past, and music's, and come up with an album that sounds like a classic. Maybe not a capital-C classic. But a great rock and roll album.
 
-## 2. Buke and Gase, *General Dome*. <a href="{{ get_asset('images/covers2013/General Dome.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/General Dome.jpg')|urlencode }}" /></a>
+## 2. Buke and Gase, *General Dome*.
+
+<a href="{{ get_asset('images/covers2013/General Dome.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/General Dome.jpg')|urlencode }}" /></a>
 
 [The title track](http://www.youtube.com/watch?v=qhSmIxA4-bM). ["Houdini Crush"](http://vimeo.com/60422625) (unofficial fan-made music video, trigger warning for some date rapey themes) 
 
@@ -105,7 +123,9 @@ Singer Arone has a perfect voice for this spikily rhythmic bramble patch of an a
 
 <small>I [reviewed this album](http://www.amazon.com/review/RCIA47LY4KMHN/ref=cm_cr_dp_title?ie=UTF8&ASIN=B00AG4776K&nodeID=5174&store=music) at Amazon too because it didn't have any reviews at the time, which was a travesty. That review goes into a little more detail about particular songs.</small>
 
-## 1. Laura Stevenson, *Wheel*. <a href="{{ get_asset('images/covers2013/Wheel.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Wheel.jpg')|urlencode }}" /></a>
+## 1. Laura Stevenson, *Wheel*.
+
+<a href="{{ get_asset('images/covers2013/Wheel.jpg')|urlencode }}" rel="bytebox"><img class="albumcover" src="{{ get_asset('images/covers2013/Wheel.jpg')|urlencode }}" /></a>
 
 [The title track](http://www.youtube.com/watch?v=bdpIq8wXCWY). ["Runner"](http://www.youtube.com/watch?v=X-GMtVxhJd4). ["The Move" (live)](http://www.youtube.com/watch?v=BVcjzgfOebU). 
 

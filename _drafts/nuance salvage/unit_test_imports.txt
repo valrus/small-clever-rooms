@@ -1,0 +1,106 @@
+The setup
+
+In [REDACTED], we have basically a single directory that we expect all devs to have in their PYTHONPATH at all times. It contains common modules and packages with tools that have proven to be useful in a wide enough variety of scripts to be made generally available. As a result, changes to this code can have wide-ranging effects.
+ 
+
+We're in the process of creating unit tests for this code, but that is a time-consuming process and coverage is not that high. We'd like a stopgap: a simple test that just tries to import all the modules in our PYTHONPATH, thereby catching really egregious problems like syntax errors and circular imports. We'll call it test_imports.py, and we want to be able to run it two ways: either by running it directly using python test_imports.py or by using the 2.7 Python unittest module's test discovery via the command python -m unittest discover <dir where unit tests reside>.
+
+ 
+Implementing it
+
+Obviously explicitly listing everything we try to import is a bad idea, because it means we have to update this test every time we add a new module. But it's easy enough to list them by searching the directory and using Python's built-in __import__ function to import each in turn:
+
+    def listImports(moduleDir):  
+        modules = [  
+            os.path.splitext(os.path.basename(f))[0]  
+            for f in iglob(os.path.join(moduleDir, "*.py"))  
+        ]  
+        packages = [  
+            f for f in os.listdir(moduleDir)  
+            if os.path.isdir(os.path.join(moduleDir, f))  
+            and f not in ("CVS", ...)  # list anything you don't want to test here  
+        ]  
+        return modules + packages  # you could separate these out if you want  
+      
+    class TestImports(unittest.TestCase):  
+        def test_imports(self):  
+            moduleDir = ...  # Set this to whatever dir has the modules you want to test  
+            # Import each module in turn  
+            for m in listImports(moduleDir):  
+                self.assertTrue(__import__(self.importName))  
+
+This works. But unfortunately, it lumps all imports into the same unit test. This means that if it fails, you won't necessarily know which module it failed on, and moreover, it won't continue and try other imports if one fails. It would be a lot better if each import were its own test.
+
+ 
+Making it Better
+
+To split each import into its own unit test, we need to know two things:
+
+1. unittest.TestCase is just a Python class, and you can do introspection, dynamic attribute manipulation and whatever other Python voodoo you want on it just like any other class.
+
+2. Unit test running is customizable too, by modifying the load_tests function. It returns a unittest.TestSuite object containing the tests you want to run when the script is run using unittest.main() or via unit test discovery.
+
+ 
+
+Using (1) from this list, we create a unittest.TestCase subclass that just tries to import a single module. It's really very little code, and most of it it just niceties to get better reporting. I'll just copy the code and let the comments do most of the explaining, but note that the method name aliasing on lines 14-18 is necessary (or preferred, at least) because unit tests report the name of the method they were in when they fail:
+
+    class SingleImport(unittest.TestCase):  
+        """A unit test that tries to load a single module and fails if it can't. 
+        """  
+        def __init__(self, importName):  
+            """Set up an appropriately named method based on a module name. 
+     
+            This is some silly Python magic that seems to be necessary to 
+            accomplish the following two things: 
+            1. Have one unit test per module to try to import. 
+            2. Name the unit tests to reflect what they're doing. 
+            """  
+            self.importName = importName  
+      
+            # Create a test method name from what we're trying to import  
+            methodName = "test_load_{}".format(self.importName)  
+      
+            # Alias the test method name to the predefined method  
+            setattr(self, methodName, self.tryToLoad)  
+      
+            # Superclass initialization, designating the aliased method as the  
+            # one to run for this test case  
+            super(SingleImport, self).__init__(methodName=methodName)  
+      
+        def tryToLoad(self):  
+            self.assertTrue(__import__(self.importName))  
+
+ 
+
+Now, in order to use this class, we define our load_tests function to instantiate a SingleImport for each module we want to import:
+
+    def load_tests(loader, tests, pattern):  
+        """Python unittest magic to customize which tests get run. 
+     
+        Unit test discovery uses this function to determine which tests to run. 
+        Since we want to generate the tests dynamically based on the contents of 
+        the Python module dir, we need to use it for that. 
+        """  
+        moduleDir = ...  # Set this to whatever dir has the modules you want to test  
+        # Generate the suite of unit tests  
+        suite = unittest.TestSuite()  
+        for m in listImports(moduleDir):  # listImports is defined as above  
+            suite.addTest(SingleImport(m))  
+      
+        return suite  
+
+ 
+
+Finally, the boilerplate that allows us to run this as a normal Python script:
+
+    if __name__ == '__main__':  
+        unittest.main()  
+
+ 
+The Point Of This
+
+In a way, this test is kind of silly. Catching syntax errors isn't that big a deal if it still lets through egregious logic errors or code that flat out doesn't do what it's supposed to. But it can save the embarrassment of checking in code that obviously hasn't been given even the most cursory test.
+
+ 
+
+The real point, though, is that this is pretty close to a minimal useful example of how to do some meta-hacking of Python's unit testing capabilities by dynamically generating tests and supplying them to the test runner. We plan to use some of these techniques to make our own test runner that knows where all our different test code sits in our source code repo and runs it all for us: unittest discover would have to cast too wide a net in this case to make it worth our while. There may be another post about that in the future if it ends up being interesting enough.

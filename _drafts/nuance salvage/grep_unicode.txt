@@ -1,0 +1,61 @@
+I have a gzipped UTF-8 encoded file, let's call it file.gz, on the Grid. The character ❗ (U+2757) appears in the first 200,000 lines of this file, which I determined by manual inspection of the file by opening it in Vim and looking for rectangles or other signs of a character not displaying properly. It seems like I should be able to find that character using some tool's automated search instead, but I can't get anything to find it.
+
+ 
+
+Putting [✀-➿] (the range of hex codes corresponding to the Dingbats unicode block in which ❗ is found) into a UTF-8 encoded file patterns.txt and using this command:
+
+    zcat file.gz |  head -n 200000 | grep -f patterns.txt  
+
+doesn't work. It gives an error:
+
+    grep: Invalid collation character  
+
+I don't know why that happens, unfortunately.
+
+ 
+
+Using Perl to look for dingbats using this command:
+
+    zcat file.gz | head -n 200000 |perl -ne 'print if /\p{InDingbats}/'  
+
+doesn't find it. It prints nothing.
+
+ 
+
+Searching for a character range instead:
+
+    zcat file.gz | perl -ne 'print if /[\x{2600}-\x{27ff}]/'   
+
+doesn't find it either.
+
+ 
+
+Even good old Python fails me:
+
+    zcat file.gz | head -n 200000 | python -c "import re,sys; [sys.stdout.write(l) for l in sys.stdin if re.search(ur'[\u2600-\u27ff]', l)]"  
+
+finds nothing.
+
+ 
+
+These fail because zcat file.gz produces UTF-8 encoded output, which should have been obvious in retrospect. So making that last command search for the UTF-8 encoding of ❗ succeeds:
+
+    zcat file.gz | head -n 200000 | python -c "import re,sys; [sys.stdout.write(l) for l in sys.stdin if re.search('\xe2\x9d\x97', l)]"  
+
+and finds a few matches.
+
+ 
+
+It turns out that that's the key. It's difficult to search for a whole range of Unicode characters if you have to use the UTF-8 encoding, though. We need to decode stdin as it comes into our Python or Perl one-liner. In Python, do it like this:
+
+    zcat file.gz | head -n 200000 | python -c "import re,sys; [sys.stdout.write(l) for l in sys.stdin if re.search('\xe2\x9d\x97', l.decode('utf-8'))]"  
+
+ 
+
+In Perl, adapt the first of the two commands shown above thus:
+
+    zcat file.gz | head -n 200000 |perl -ne 'use open qw(:std :utf8); print if /\p{InDingbats}/'  
+
+ 
+
+Anyone got a solution for grep? I'd love to hear it.
