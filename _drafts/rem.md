@@ -2,7 +2,7 @@
 layout: post.html
 title: R.E.M.
 subhead: 
-tags: [music, r_e_m, cycling]
+tags: [music, r_e_m]
 summary: 
 ---
 
