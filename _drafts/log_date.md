@@ -48,8 +48,12 @@ that makes it more than just a solid run of great jokes and set pieces,
 shoring up the places it's weakest
 and elevating its finest moments even further.
 Though the comedic timing is perfect,
-Peridot's pushing Greg off the roof is telegraphed about a million miles out
-by her pondering the flight capabilities of Earth creatures.
+the gag in the first flashback vignette is telegraphed about a million miles out.
 But the real payoff is in Garnet's thoughtful reaction
-to Peridot's indignant "How was I supposed to know that?"
-
+to Peridot's indignant "How was I supposed to know that [pushing Greg off the roof would hurt him]?"
+Garnet hasn't been terribly sympathetic to Peridot up until this point,
+and there's reason to believe this is the first time
+she really thinks about where Peridot's coming from.
+So Garnet's explanation to Greg is gracious but doesn't let Peridot off the hook,
+not that Peridot feels secure enough yet to admit fault of any kind.
+Still, it's a nice first step 

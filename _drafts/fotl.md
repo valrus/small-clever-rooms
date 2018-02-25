@@ -56,3 +56,6 @@ He sings only one note for two entire songs on their third LP _The Plot Against 
 [Failed Olympic Bid](https://www.youtube.com/watch?v=jLoyj9EII2U)
 and [A Guide to Men](https://www.youtube.com/watch?v=kPojMNChY_E),
 and they're among the best songs on the album.
+He knows the value of an ad-lib,
+and appreciates the fine distinction
+between a freewheeling "YEAH!", a dignified "[YES!](https://www.youtube.com/watch?v=XIK5mUIOPfU)" and an unhinged "YAAAAAHHHHH!"
