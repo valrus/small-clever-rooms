@@ -1,6 +1,6 @@
 [submodule "_assets/css/tufte-css"]
 	path = _assets/css/tufte-css
-	url = https://github.com/edwardtufte/tufte-css
+	url = git@github.com:valrus/tufte-css.git
 [submodule "_assets/css/tufte-pandoc-css"]
 	path = _assets/css/tufte-pandoc-css
-	url = https://github.com/jez/tufte-pandoc-css
+	url = git@github.com:valrus/tufte-pandoc-css.git

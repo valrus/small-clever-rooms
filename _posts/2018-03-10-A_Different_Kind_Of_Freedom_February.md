@@ -5,7 +5,8 @@ tags: [personal]
 summary: Snip!
 ---
 
-My employer Bonanza has an interesting employee benefit called "Freedom February,"
+My employer [Bonanza](https://www.bonanza.com/jobs)
+has an interesting employee benefit called "Freedom February,"
 where during that month
 every employee gets a week's worth of free days off
 and some cash to offset the cost of using those days
