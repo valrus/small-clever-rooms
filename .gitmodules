@@ -4,3 +4,6 @@
 [submodule "_assets/css/tufte-pandoc-css"]
 	path = _assets/css/tufte-pandoc-css
 	url = git@github.com:valrus/tufte-pandoc-css.git
+[submodule "_assets/js/mathjax"]
+	path = _assets/js/mathjax
+	url = git@github.com:mathjax/MathJax.git
