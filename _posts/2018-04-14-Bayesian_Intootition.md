@@ -99,7 +99,7 @@ So, Bayes to the rescue.
 
 Here, $X$ is the event whose probability we're trying to determine: "A told the truth."
 $E$ is the available evidence: "C said B confirmed A told the truth."
-Since we're told that $E$ has occurred, we're interested in finding $P(X|E).
+Since we're told that $E$ has occurred, we're interested in finding $P(X|E)$.
 We're also given that $P(X) = 1/3$.
 So to finish the calculation,
 we need $P(E)$ and $P(E|X)$.
@@ -179,7 +179,7 @@ $P(E \cap X)$, the probability that A tells the truth _and_ C says B confirms A,
 is just the subset of the cases of $P(E)$ where A also told the truth: 1 and 4.
 Those have a combined probability of $5/27$.
 Finally, $P(X) = 1/3$.
-So, $P(E|X) = $P(E \cap X) / P(X) = (5/27) / (1/3) = 5/9$.
+So, $P(E|X) = P(E \cap X) / P(X) = (5/27) / (1/3) = 5/9$.
 
 Putting this all together in Bayes's theorem:
 
