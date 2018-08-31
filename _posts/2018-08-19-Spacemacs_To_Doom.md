@@ -1,7 +1,8 @@
 ---
 layout: post.images.html
 title: Spacemacs to Doom Migration
-summary: [emacs, spacemacs, doom-emacs]
+tags: [emacs, spacemacs, doom-emacs]
+summary: An intro to Doom Emacs geared towards Spacemacs refugees.
 ---
 
 I've been trying out [Doom Emacs](https://github.com/hlissner/doom-emacs) recently,
@@ -67,13 +68,14 @@ out of the box (e.g. auto-closing tags in Web mode).
 Still, there haven't been too many things I find myself really missing in Doom,
 though I should say I've been mostly working with Ruby on Rails in it.
 
-Doom's developer is very accessible via a Discord chat.
+Doom's developer is very accessible via a
+[Discord chat](https://discord.gg/bcZ6P3y).
 Spacemacs's isn't so much --- it's kind of been a victim of its own success in that way
 --- but it has a bigger community. On the other hand, I've found Doom's source
 a little easier to inspect to figure things out for myself.
 Ultimately, the amount of support available for each is a wash:
 I've felt the need to ask for help less with Doom,
-but there also seem to be less places to get it if I need it.
+but there also seem to be fewer places to get it if I need it.
 
 ## How do I set it up
 
@@ -185,12 +187,28 @@ with `linum-relative` as an example:
 4. Restart Emacs, or run the `doom/reload` command with `SPC :`.
    (Or use the key sequence `SPC h R`.)
 
-## And that's it
+## Other resources
 
 If you're a Spacemacs user and thinking about trying Doom,
 I hope this helps you!
-Please feel free to check out my [personal Doom config](https://github.com/valrus/doom-private-module)
-if you want a starting point,
-or you may prefer [the Doom developer's](https://github.com/hlissner/doom-emacs-private)
-as probably a better canonical example of How To Do Things.
+Here are a couple other blog posts that could be helpful:
+
+* Aria Edmonds's
+  [Getting started with Doom Emacs](https://medium.com/@aria_39488/getting-started-with-doom-emacs-a-great-transition-from-vim-to-emacs-9bab8e0d8458)
+* Justin DeMaris's
+  [Emacs Doom for Newbies](https://medium.com/urbint-engineering/emacs-doom-for-newbies-1f8038604e3b)
+
+Finally, please feel free to check out my [personal Doom config](https://github.com/valrus/doom-private-module)
+if you want a starting point.
+And here are some others that might provide inspiration:
+
+* [the Doom developer's](https://github.com/hlissner/doom-emacs-private),
+  assuredly a better canonical example than mine of How To Do Things
+* [Emiller88's](https://github.com/Emiller88/doom-emacs-private),
+  a fairly simple example of a "literate" config which looks lovely in GitHub
+* [fuxialexander's](https://github.com/fuxialexander/doom-emacs-private-xfu),
+  a more complex config with lots of customization and added features
+* [ar1a's](https://github.com/ar1a/dotfiles/tree/master/emacs/.doom.d),
+  as seen in her nice blog post linked above
+  
 Happy Dooming!
