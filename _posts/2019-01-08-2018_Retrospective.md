@@ -364,6 +364,29 @@ Ultimately my favorite chapters (or "episodes" as I suppose they're called) were
 
 [this cute Slate article]: https://slate.com/human-interest/2011/04/joyce-s-ulysses-the-only-chapter-worth-reading.html
 
+I don't watch much TV, but I watched a little more this year than previously.
+_Steven Universe_ continues to be, in my opinion, one of the best things going in any medium,
+even hamstrung as it is by Cartoon Network's frankly self-sabotaging airing schedule, or lack thereof:
+its compassion, worldbuilding and characterization are just as strong as they were
+when I got into it originally.
+_The Good Place_ was a surprise winner:
+as little TV as I watch, live-action stuff is an even tougher sell.
+But it's been just consistently great,
+packing gobs of plot into each episode while consistently delivering great gags
+and interesting, well-acted characters.
+Just top-notch along every axis that I as an infrequent TV watcher am aware of.
+And the first seasons of _Hilda_ and _She-Ra and the Princesses of Power_
+were also very solid, if not revelatory like my two favorites of the year.
+
+Finally, I started listening to podcasts more consistently in 2018.
+My reliable weekly listen has been Daniel Ortberg's _Dear Prudence_ podcast ---
+I've been a big fan of Daniel's other projects for many years,
+and his advice-giving is no less a joy.
+In between, I'm listening to the whole backlog of Scott Aukerman and Adam Scott's
+_U Talkin' U2 2 Me?_ and _R U Talkin' R.E.M. RE: Me?_,
+half tributes to a couple bands that hold a lot of nostalgia for me
+and half just two pretty funny guys shooting the shit in a breezily amusing way.
+
 ## Ideas
 
 Between living with a partner who's living outside the demands of capitalism as much as possible
