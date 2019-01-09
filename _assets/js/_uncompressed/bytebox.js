@@ -1,22 +1,22 @@
 var bytebox = function() {
-    var stt, stl, stw, sth, b, c, tn, i, tit, im, src, co, st, l, cl, tp, lp, n, pr, ne, a, nx, ni, n_i;
+    var stt, stl, stw, sth, b, c, tn, i, tit, im, src, co, st, l, cl, tp, lp, n, pr, ne, a, nx, ni, n_i, hidpi;
     return {
         init: function() {
             var ls = document.body.getElementsByTagName("a");
             for (i = 0; i < ls.length; i++) {
                 var rel = ls[i].rel;
                 if (rel == 'bytebox') {
-                    ls[i].onclick = bytebox.ld;
+                    ls[i].onclick = bytebox.load;
                 }
             }
         },
-        ld: function() {
+        load: function() {
             st = 0;
             a = this;
             d = document;
             b = d.createElement('div');
             d.body.appendChild(b);
-            b.id = 'bb_ov';
+            b.id = 'bb_overlay';
             b.style.width = bytebox.wt() + "px";
             b.style.height = bytebox.ht() + "px";
             b.style.opacity = 0.1;
@@ -27,6 +27,7 @@ var bytebox = function() {
                 tit = this.title;
             }
             src = this.href;
+            hidpi = /@2x/.test(src);
             setTimeout(bytebox.fd, 1);
             return false;
         },
@@ -64,11 +65,12 @@ var bytebox = function() {
         l: function() {
             document.body.removeChild(l);
             d = document;
-            ih = im.height;
+            ih = im.height / (hidpi ? 2 : 1);
+            iw = im.width / (hidpi ? 2 : 1);
             i = d.createElement('div');
             i.id = 'bb_div';
             tp = (((bytebox.h() / 2) - ((ih / 2) + 25)) + bytebox.t());
-            lp = ((bytebox.w() / 2) - ((im.width / 2) + 40));
+            lp = ((bytebox.w() / 2) - ((iw / 2) + 40));
             if ((tp + ih + 60) >= bytebox.ht()) {
                 tp = bytebox.ht() - tp;
                 tp = bytebox.ht() - (ih + 60);
@@ -77,10 +79,10 @@ var bytebox = function() {
             }
             i.style.top = tp + "px";
             i.style.left = lp + "px";
-            i.style.width = im.width + 20 + "px";
-            i.cw = im.width;
-            i.ch = im.height;
-            i.style.height = (tit) ? (im.height + 60) + "px" : im.height + 20 + "px";
+            i.style.width = iw + 20 + "px";
+            i.cw = iw;
+            i.ch = ih;
+            i.style.height = (tit) ? (ih + 60) + "px" : ih + 20 + "px";
 
             n_i = d.createElement('img');
             n_i.onclick = bytebox.r;

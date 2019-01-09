@@ -1,64 +1,64 @@
 /*BYTEBOX START*/
-#bb_ov{
-	position:  absolute;
-	top:  0;
-	left:  0;
-	z-index:  90;
-	width:  100%;
-	height:  500px;
+#bb_overlay {
+    position:  absolute;
+    top:  0;
+    left:  0;
+    z-index:  90;
+    width:  100%;
+    height:  500px;
 }
 
-#bb_div{
-	padding: 20px;
-	z-index: 100;
-	background-color:rgb(37, 58, 107);
-	position: absolute;
-	text-align: center;
+#bb_div {
+    padding: 20px;
+    z-index: 100;
+    background-color:rgb(37, 58, 107);
+    position: absolute;
+    text-align: center;
 }
 
-div#bb_div img {
+div#bb_div img  {
     max-width: 100%;
 }
 
-#bb_a{
+#bb_a {
 }
 
-#bb_da{
-	margin: 0 auto;
-	padding: 5px;
-	color: #FFFEF0;
-	text-indent: 10px;
-  font-family: "Bitter", "Palatino Linotype", "Georgia", serif;
-	text-decoration: none;
-	font-size: 18px;
+#bb_da {
+    margin: 0 auto;
+    padding: 5px;
+    color: #FFFEF0;
+    text-indent: 10px;
+    font-family: "Bitter", "Palatino Linotype", "Georgia", serif;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-#bb_l{
-	position: absolute;
-	z-index: 190;
+#bb_l {
+    position: absolute;
+    z-index: 190;
 }
 
-#bb_pr,#bb_ne{
-	width: 100px;
-	z-index: 2000;
-	cursor: pointer;
-	display: block;
-	background: red;
+#bb_pr,#bb_ne {
+    width: 100px;
+    z-index: 2000;
+    cursor: pointer;
+    display: block;
+    background: red;
 }
 
-#bb_pr{
-	background: url(../images/prev.png) left center no-repeat !important;
+#bb_pr {
+    background: url(../images/prev.png) left center no-repeat !important;
 }
 
-#bb_ne{
-	background: url(../images/next.png) right center no-repeat !important;
+#bb_ne {
+    background: url(../images/next.png) right center no-repeat !important;
 }
 
-#bb_cl{
-	background: url(../images/close.png) top left no-repeat;
-	width: 45px;
-	height: 45px;
-	z-index: 2000;
-	cursor: pointer;
+#bb_cl {
+    background: url(../images/close.png) top left no-repeat;
+    width: 45px;
+    height: 45px;
+    z-index: 2000;
+    cursor: pointer;
 }
 /*BYTEBOX END*/
