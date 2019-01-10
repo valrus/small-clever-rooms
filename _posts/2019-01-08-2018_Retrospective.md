@@ -522,3 +522,8 @@ leads to doing harmful things you insist are based on pure reason
 but are actually driven by emotions that you're not even aware of.
 I know about this because it took me until about the age of 30 to start recovering from it.
 (See _Therapy_, above.)
+
+## Anyway That's It
+
+I don't feel like trying to wrap this up in an elegant way.
+Here's to 2019 not being a total shitshow.
