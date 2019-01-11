@@ -370,11 +370,11 @@ even hamstrung as it is by Cartoon Network's frankly self-sabotaging airing sche
 its compassion, worldbuilding and characterization are just as strong as they were
 when I got into it originally.
 _The Good Place_ was a surprise winner:
-as little TV as I watch, live-action stuff is an even tougher sell.
+live-action stuff is a tough sell for me because it can just be Too Much emotionally.
 But it's been just consistently great,
 packing gobs of plot into each episode while consistently delivering great gags
 and interesting, well-acted characters.
-Just top-notch along every axis that I as an infrequent TV watcher am aware of.
+Just top-notch along every axis that I'm aware of.
 And the first seasons of _Hilda_ and _She-Ra and the Princesses of Power_
 were also very solid, if not revelatory like my two favorites of the year.
 
