@@ -144,8 +144,8 @@ and a lot of the top-level "categorizing" bindings are the same:
 `w` for windows, `b` for buffers, etc.
 
 Unfortunately (for you and me as Spacemacs refugees)
-the bindings are also _just_ different enough to trip you up.
-`SPC b [` and `SPC b ]` go to the previous or next buffer instead of `SPC b p` and `SPC b n`.
+the bindings are sometimes _just_ different enough to trip you up.
+<del>`SPC b [` and `SPC b ]` go to the previous or next buffer instead of `SPC b p` and `SPC b n`.</del>
 You open Magit's status with `SPC g g` instead of `SPC g s`.
 Perhaps worst of all, "save what I'm working on now"
 is a _buffer_ command under `SPC b s` instead of a _file_ command at `SPC f s`.
