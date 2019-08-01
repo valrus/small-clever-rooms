@@ -159,7 +159,7 @@ but it is in the code, so search for `defmacro map!` in the repo and read the co
 For supplementary material, refer to my example auxiliary config file,
 in which I'm depositing all my bindings transferred over from Spacemacs
 so all that muscle memory doesn't go to waste.
-Feel free to [copy it for yourself](https://github.com/valrus/doom-private-module/blob/master/%2Bspacemacs-bindings.el),
+Feel free to [copy it for yourself](https://github.com/valrus/doom-private-module/blob/master/bindings/%2Bspacemacs.el),
 and if you do, don't forget to `load` it from your `config.el`!
 
 ## Adding packages
